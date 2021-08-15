@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contacto - clases de baile - Estudio Libre movimiento</title>
+    <meta name="description" content="Contactate con nosotros, llena el formulario y veni a bailar.">
+    <meta name="keywords" content="libre movimiento, bailar, contacto, formulario, horarios, instagram, facebook, palermo, olivos">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lemonada:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-fondo pt-5 pb-3 navbar navbar-dark navbar-expand-lg">
+          <div class="container align-items-end py-4 mt-2">
+            <a class="navbar-brand text-end pt-5 ms-5" href="../index.html"><img class="img-fluid w-75" src="../media/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-center text-uppercase collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="align-items-center navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clases
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./presenciales.html">Presenciales</a></li>
+                    <li><a class="dropdown-item" href="./virtuales.html">Virtuales</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./horarios.html">Horarios y sedes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./promos.html">Valores y promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+   </header>  
+
+    
+    <main">
+
+        <div class="contacto">
+            <div class="contacto__titulo">
+                <h1>Contacto</h1>
+            </div>
+            <div class="contacto__subtitulo">
+                <h2>Envianos tu mensaje</h2>
+                <p>¡Completa el formulario y veni a bailar!</p>
+            </div>
+            <form action="#" method="GET">
+    
+                <div class="formulario">
+                    <div>
+                        <label for="Name">Nombre</label>
+                        <input type="text" name="Name" id="Name" placeholder="Introduzca su nombre" required>
+                    </div>
+                    <div>
+                        <label for="Surname">Apellido</label>
+                        <input type="text" name="Surname" id="Surname" placeholder="Introduzca su apellido"required>
+                    </div>
+                </div>    
+                <div class="formulario__mail">
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="text" name="Email" id="Email" placeholder="Introduzca su email" required>
+                    </div>
+                    <div>
+                        <select name="Sedes" id="Sedes" required>
+                            <option value="" disabled selected>Eliga sede</option>
+                            <option value="Olivos">Olivos</option>
+                            <option value="Palermo">Palermo</option>
+                        </select>
+                    </div>
+                 </div>    
+                    <div class="formulario__textarea">
+                        <p>Comentanos tus horarios disponibles o lo que quieras decirnos...</p>
+                        <textarea name="mensaje" id="mensaje" cols="70" rows="3" placeholder="Escribe tu mensaje aquí..." ></textarea>
+                        <div class="formulario__textarea--tamaño">¿Cómo nos conociste?</div>
+                    </div>
+    
+                    <div class="formulario__radio">
+                        <div class="formulario__radio--espacio">Instagram</div>
+                        <input type="radio" name="comoNosConociste" value="Instagram" />
+                        <div class="formulario__radio--espacio">Facebook</div>
+                        <input type="radio" name="comoNosConociste" value="Facebook" />
+                        <div class="formulario__radio--espacio">Publicidad</div>
+                        <input type="radio" name="comoNosConociste" value="Publicidad" />
+                        <div class="formulario__radio--espacio">Folleto</div>
+                        <input type="radio" name="comoNosConociste" value="Folleto" />
+                        <div class="formulario__radio--espacio">Por un amigo/a</div>
+                        <input type="radio" name="comoNosConociste" value="poramigo-a" />
+                        <div class="formulario__radio--espacio">Twitter</div>
+                        <input type="radio" name="comoNosConociste" value="Twitter" />
+                        <div class="formulario__radio--espacio">Otra</div>
+                        <input type="radio" name="comoNosConociste" value="Otra" />
+                    </div>
+                    <div class="formulario__checkbox">
+                        <div>
+                            <label for="Acepta">Acepta las políticas de privacidad</label>
+                            <input type="checkbox" name="Acepta" id="Acepta">
+                        </div>   
+                        <div>
+                            <input type="submit" value="Enviar" class="formulario__checkbox--espacio">
+                            <input type="reset" value="Resetear" class="formulario__checkbox--espacio">
+                        </div> 
+                    </div>
+
+            </form>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </main>
+    
+    
+</body>
+</html>
