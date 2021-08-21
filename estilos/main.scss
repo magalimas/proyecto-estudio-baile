@@ -2,6 +2,8 @@
 @import "./partials/contacto";
 @import "./partials/novedades";
 @import "./partials/virtuales";
+@import "./partials/prueba";
+@import "./partials/galeria";
 
 *{
     margin: 0;
@@ -15,7 +17,7 @@ body {
 }
 
 .nav-fondo{
-    background-image: url(../media/fondoHeader.png);
+    background-image: url(../media/fondo-header.png);
 }
 
 .principal {
@@ -111,48 +113,13 @@ body {
 }
 
 .img-footer {
-    background-image: url(../media/fondoFooter.png);
+    background-image: url(../media/fondo-footer.png);
 }
 
 .fb, .ig, .yt{
     width: 3rem;
 }
 
-
-
-
-
-
-
-
-/*CLASES PRESENCIALES*/
-
-
-
-.borde-galeria {
-    border: 4px solid #9f27f5;
-  }
-  
-  .img-width {
-    width: 8rem;
-  }
-  
-  .btn-ritmos {
-    padding: 1rem;
-    background-image: linear-gradient(to left, orange, #ce650b82);
-    margin: 2rem 1rem;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-  
-  .sede-olivos, .sede-palermo {
-    padding: 2rem;
-    margin: 6rem 0rem 4rem 1rem;
-    border-right: 1rem solid orange;
-    border-bottom: 1rem solid lightslategray;
-  }
-
-  
 
 
 

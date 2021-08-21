@@ -1,0 +1,520 @@
+@import "./variables";
+
+.gridHorarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 5) , 1fr));
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo titulo titulo"
+    "horarioPalermo horarioPalermo . . . . ."
+    " nada lunes martes miercoles jueves viernes sabado"
+    "nueveymedia cuadroZumba cuadroKpop cuadroZumbaD cuadroKpopD cuadroZumbaT cuadroSalsa"
+    "quinceHoras cuadroJazz cuadroBallet ion cuadroJazzD cuadroBalletD ionD"
+    "diecisietetreinta reggFusion dancehall reggFusionDos dancehallD reggFusionT streetjazz"
+    "dieciochotreinta femme bachata femmeD bachataD femmeT bachataT"
+    "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn"
+    "horarioOlivos horarioOlivos . . . . ."
+    "none l m mi j v s "
+    "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños"
+    "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion"
+    "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon"
+    "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa"
+    "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio"
+    ;
+    
+    
+  }
+  
+  .tituloHorarios {
+    grid-area: titulo;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+  }
+  
+  .horarioPalermo {
+    grid-area: horarioPalermo;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0rem;
+    padding: 1rem;
+    border-right: 1rem solid orange;
+    border-bottom: 1rem solid lightslategray;
+  }
+  
+  .lunes {
+    grid-area: lunes;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .martes {
+    grid-area: martes;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .miercoles {
+    grid-area: miercoles;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .jueves {
+    grid-area: jueves;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .viernes {
+    grid-area: viernes;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .sabado {
+    grid-area: sabado;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .nada {
+    grid-area: nada;
+  }
+  
+  .nueveymedia {
+    grid-area: nueveymedia;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .cuadroZumba {
+    grid-area: cuadroZumba;
+  }
+  
+  .cuadroKpop {
+    grid-area: cuadroKpop;
+  }
+  
+  .cuadroZumbaD{
+    grid-area: cuadroZumbaD;
+  }
+  
+  .cuadroKpopD{
+    grid-area: cuadroKpopD;
+  }
+  
+  .cuadroZumbaT{
+    grid-area: cuadroZumbaT
+  }
+  
+  .cuadroSalsa {
+    grid-area: cuadroSalsa;
+  }
+  
+  .quinceHoras {
+    grid-area: quinceHoras;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .cuadroJazz {
+    grid-area: cuadroJazz;
+  }
+  
+  .cuadroBallet {
+    grid-area: cuadroBallet;
+  }
+  
+  .ion {
+    grid-area: ion;
+  }
+  
+  .cuadroJazzD{
+    grid-area: cuadroJazzD;
+  }
+  
+  .cuadroBalletD{
+    grid-area: cuadroBalletD;
+  }
+  
+  .ionD{
+    grid-area: ionD;
+  }
+  
+  .diecisietetreinta {
+    grid-area: diecisietetreinta;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .cuadroReggaetonF {
+    grid-area: reggFusion
+  }
+  
+  .cuadroDancehall {
+    grid-area: dancehall;
+  }
+  
+  .cuadroReggaetonFD {
+    grid-area: reggFusionDos;
+  }
+  
+  .cuadroDancehallD {
+    grid-area: dancehallD;
+  }
+  
+  .cuadroReggaetonFT {
+    grid-area: reggFusionT;
+  }
+  
+  .cuadroStreetj {
+    grid-area: streetjazz;
+  }
+  
+  .dieciochotreinta {
+    grid-area: dieciochotreinta;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .cuadroFemme {
+    grid-area: femme;
+  }
+  
+  .cuadroBachata {
+    grid-area: bachata;
+  }
+  
+  .cuadroFemmeD {
+    grid-area: femmeD;
+  }
+  
+  .cuadroBachataD {
+    grid-area: bachataD;
+  }
+  
+  .cuadroFemmeT {
+    grid-area: femmeT;
+  }
+  
+  .cuadroBachataT {
+    grid-area: bachataT
+  }
+  
+  .diecinuevetreinta {
+    grid-area: diecinuevetreinta;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .cuadroRegg {
+    grid-area: regg;
+  }
+  
+  .cuadroHiph {
+    grid-area: hiph;
+  }
+  
+  .cuadroReggD {
+    grid-area: regg2;
+  }
+  
+  .cuadroHiphD {
+    grid-area: hiph2;
+  }
+  
+  .cuadroReggT {
+    grid-area: regg3;
+  }
+  
+  .ionn {
+    grid-area: ionn;
+  }
+  
+  .horarioOlivos {
+    grid-area: horarioOlivos;
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0rem 3rem 2rem;
+    padding: 1rem;
+    border-right: 1rem solid orange;
+    border-bottom: 1rem solid lightslategray;
+  }
+  
+  .l {
+    grid-area: l;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .m {
+    grid-area: m;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .mi {
+    grid-area: mi;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .j {
+    grid-area: j;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .v {
+    grid-area: v;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .s {
+    grid-area: s;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: lightsalmon;
+  }
+  
+  .none {
+    grid-area: none;
+  }
+  
+  .nuevehoras {
+    grid-area: nuevehoras;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .cuadroLyrical {
+    grid-area: lyricalJ;
+  }
+  
+  .cuadroTango {
+    grid-area: tango;
+  }
+  
+  .cuadroLyricalD {
+    grid-area: lyricalJ2;
+  }
+  
+  .cuadroTangoD {
+    grid-area: tango2;
+  }
+  
+  .cuadroLyricalT {
+    grid-area: lyricalJ3
+  }
+  
+  .cuadroCaribeños {
+    grid-area: caribeños;
+  }
+  
+  .oncehoras {
+    grid-area: oncehoras;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .olivosZumba {
+    grid-area: zumb;
+  }
+  
+  .olivosClasica {
+    grid-area: clasica;
+  }
+  
+  .olivosZumbaD{
+    grid-area: zumb2;
+  }
+  
+  .olivosClasicaD{
+    grid-area: clasica2;
+  }
+  
+  .olivosZumbaT{
+    grid-area: zumb3;
+  }
+  
+  .olivosElongacion {
+    grid-area: elongacion;
+  }
+  
+  .dieciseishoras {
+    grid-area: dieciseishoras;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .olivosReggF {
+    grid-area: reggfus;
+  }
+  
+  .olivosStreetj {
+    grid-area: streetj;
+  }
+  
+  .olivosReggFD{
+    grid-area: reggfus2;
+  }
+  
+  .olivosStreetjD{
+    grid-area: streetj2;
+  }
+  
+  .olivosReggFT {
+    grid-area: reggfus3;
+  }
+  
+  .olivosIon {
+    grid-area: olivosIon;
+  }
+  
+  .diecinuevehoras {
+    grid-area: diecinuevehoras;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .olivosUrbano {
+    grid-area: urbano;
+  }
+  
+  .olivosBacha {
+    grid-area: bacha;
+  }
+  
+  .olivosUrbanoD {
+    grid-area: urbanodos;
+  }
+  
+  .olivosBachaD {
+    grid-area: bachados;
+  }
+  
+  .olivosUrbanoT {
+    grid-area: urbanotres;
+  }
+  
+  .olivosSalsa {
+    grid-area: salsa;
+  }
+  
+  .veintehoras {
+    grid-area: veintehoras;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .olivosReggaeton {
+    grid-area: reggaeton;
+  }
+  
+  .olivosHiph {
+    grid-area: hiphop;
+  }
+  
+  .olivosReggaetonD{
+    grid-area: reggaetondos;
+  }
+  
+  .olivosHiphD {
+    grid-area: hiphopdos;
+  }
+  
+  .olivosReggaetonT{
+    grid-area: reggaetontres;
+  }
+  
+  .olivosNada{
+    grid-area: vacio;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .borde {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: white;
+  }
+  
+  .borde-sede{
+    margin: 6rem 0rem 1rem 7rem;
+    padding: 1rem;
+    border-right: 1rem solid orange;
+    border-bottom: 1rem solid lightslategray;
+  }

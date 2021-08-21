@@ -326,6 +326,835 @@
   font-size: 1.5rem;
 }
 
+.gridHorarios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(5, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(5, 1fr));
+      grid-template-areas: "titulo titulo titulo titulo titulo titulo titulo" "horarioPalermo horarioPalermo . . . . ." " nada lunes martes miercoles jueves viernes sabado" "nueveymedia cuadroZumba cuadroKpop cuadroZumbaD cuadroKpopD cuadroZumbaT cuadroSalsa" "quinceHoras cuadroJazz cuadroBallet ion cuadroJazzD cuadroBalletD ionD" "diecisietetreinta reggFusion dancehall reggFusionDos dancehallD reggFusionT streetjazz" "dieciochotreinta femme bachata femmeD bachataD femmeT bachataT" "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn" "horarioOlivos horarioOlivos . . . . ." "none l m mi j v s " "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños" "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion" "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon" "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa" "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio";
+}
+
+.tituloHorarios {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: titulo;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7rem;
+}
+
+.horarioPalermo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: horarioPalermo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem 0rem;
+  padding: 1rem;
+  border-right: 1rem solid orange;
+  border-bottom: 1rem solid lightslategray;
+}
+
+.lunes {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: lunes;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.martes {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: martes;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.miercoles {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: miercoles;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.jueves {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: jueves;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.viernes {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: viernes;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.sabado {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: sabado;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.nada {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nada;
+}
+
+.nueveymedia {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: nueveymedia;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadroZumba {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: cuadroZumba;
+}
+
+.cuadroKpop {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: cuadroKpop;
+}
+
+.cuadroZumbaD {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: cuadroZumbaD;
+}
+
+.cuadroKpopD {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
+  grid-area: cuadroKpopD;
+}
+
+.cuadroZumbaT {
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
+  grid-area: cuadroZumbaT;
+}
+
+.cuadroSalsa {
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
+  grid-area: cuadroSalsa;
+}
+
+.quinceHoras {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: quinceHoras;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadroJazz {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: cuadroJazz;
+}
+
+.cuadroBallet {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: cuadroBallet;
+}
+
+.ion {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: ion;
+}
+
+.cuadroJazzD {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: cuadroJazzD;
+}
+
+.cuadroBalletD {
+  -ms-grid-row: 5;
+  -ms-grid-column: 6;
+  grid-area: cuadroBalletD;
+}
+
+.ionD {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  grid-area: ionD;
+}
+
+.diecisietetreinta {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: diecisietetreinta;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadroReggaetonF {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: reggFusion;
+}
+
+.cuadroDancehall {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: dancehall;
+}
+
+.cuadroReggaetonFD {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: reggFusionDos;
+}
+
+.cuadroDancehallD {
+  -ms-grid-row: 6;
+  -ms-grid-column: 5;
+  grid-area: dancehallD;
+}
+
+.cuadroReggaetonFT {
+  -ms-grid-row: 6;
+  -ms-grid-column: 6;
+  grid-area: reggFusionT;
+}
+
+.cuadroStreetj {
+  -ms-grid-row: 6;
+  -ms-grid-column: 7;
+  grid-area: streetjazz;
+}
+
+.dieciochotreinta {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: dieciochotreinta;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadroFemme {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: femme;
+}
+
+.cuadroBachata {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: bachata;
+}
+
+.cuadroFemmeD {
+  -ms-grid-row: 7;
+  -ms-grid-column: 4;
+  grid-area: femmeD;
+}
+
+.cuadroBachataD {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+  grid-area: bachataD;
+}
+
+.cuadroFemmeT {
+  -ms-grid-row: 7;
+  -ms-grid-column: 6;
+  grid-area: femmeT;
+}
+
+.cuadroBachataT {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+  grid-area: bachataT;
+}
+
+.diecinuevetreinta {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: diecinuevetreinta;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadroRegg {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  grid-area: regg;
+}
+
+.cuadroHiph {
+  -ms-grid-row: 8;
+  -ms-grid-column: 3;
+  grid-area: hiph;
+}
+
+.cuadroReggD {
+  -ms-grid-row: 8;
+  -ms-grid-column: 4;
+  grid-area: regg2;
+}
+
+.cuadroHiphD {
+  -ms-grid-row: 8;
+  -ms-grid-column: 5;
+  grid-area: hiph2;
+}
+
+.cuadroReggT {
+  -ms-grid-row: 8;
+  -ms-grid-column: 6;
+  grid-area: regg3;
+}
+
+.ionn {
+  -ms-grid-row: 8;
+  -ms-grid-column: 7;
+  grid-area: ionn;
+}
+
+.horarioOlivos {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: horarioOlivos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 8rem 0rem 3rem 2rem;
+  padding: 1rem;
+  border-right: 1rem solid orange;
+  border-bottom: 1rem solid lightslategray;
+}
+
+.l {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: l;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.m {
+  -ms-grid-row: 10;
+  -ms-grid-column: 3;
+  grid-area: m;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.mi {
+  -ms-grid-row: 10;
+  -ms-grid-column: 4;
+  grid-area: mi;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.j {
+  -ms-grid-row: 10;
+  -ms-grid-column: 5;
+  grid-area: j;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.v {
+  -ms-grid-row: 10;
+  -ms-grid-column: 6;
+  grid-area: v;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.s {
+  -ms-grid-row: 10;
+  -ms-grid-column: 7;
+  grid-area: s;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+.none {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: none;
+}
+
+.nuevehoras {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: nuevehoras;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadroLyrical {
+  -ms-grid-row: 11;
+  -ms-grid-column: 2;
+  grid-area: lyricalJ;
+}
+
+.cuadroTango {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+  grid-area: tango;
+}
+
+.cuadroLyricalD {
+  -ms-grid-row: 11;
+  -ms-grid-column: 4;
+  grid-area: lyricalJ2;
+}
+
+.cuadroTangoD {
+  -ms-grid-row: 11;
+  -ms-grid-column: 5;
+  grid-area: tango2;
+}
+
+.cuadroLyricalT {
+  -ms-grid-row: 11;
+  -ms-grid-column: 6;
+  grid-area: lyricalJ3;
+}
+
+.cuadroCaribeños {
+  -ms-grid-row: 11;
+  -ms-grid-column: 7;
+  grid-area: caribeños;
+}
+
+.oncehoras {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  grid-area: oncehoras;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.olivosZumba {
+  -ms-grid-row: 12;
+  -ms-grid-column: 2;
+  grid-area: zumb;
+}
+
+.olivosClasica {
+  -ms-grid-row: 12;
+  -ms-grid-column: 3;
+  grid-area: clasica;
+}
+
+.olivosZumbaD {
+  -ms-grid-row: 12;
+  -ms-grid-column: 4;
+  grid-area: zumb2;
+}
+
+.olivosClasicaD {
+  -ms-grid-row: 12;
+  -ms-grid-column: 5;
+  grid-area: clasica2;
+}
+
+.olivosZumbaT {
+  -ms-grid-row: 12;
+  -ms-grid-column: 6;
+  grid-area: zumb3;
+}
+
+.olivosElongacion {
+  -ms-grid-row: 12;
+  -ms-grid-column: 7;
+  grid-area: elongacion;
+}
+
+.dieciseishoras {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: dieciseishoras;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.olivosReggF {
+  -ms-grid-row: 13;
+  -ms-grid-column: 2;
+  grid-area: reggfus;
+}
+
+.olivosStreetj {
+  -ms-grid-row: 13;
+  -ms-grid-column: 3;
+  grid-area: streetj;
+}
+
+.olivosReggFD {
+  -ms-grid-row: 13;
+  -ms-grid-column: 4;
+  grid-area: reggfus2;
+}
+
+.olivosStreetjD {
+  -ms-grid-row: 13;
+  -ms-grid-column: 5;
+  grid-area: streetj2;
+}
+
+.olivosReggFT {
+  -ms-grid-row: 13;
+  -ms-grid-column: 6;
+  grid-area: reggfus3;
+}
+
+.olivosIon {
+  -ms-grid-row: 13;
+  -ms-grid-column: 7;
+  grid-area: olivosIon;
+}
+
+.diecinuevehoras {
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  grid-area: diecinuevehoras;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.olivosUrbano {
+  -ms-grid-row: 14;
+  -ms-grid-column: 2;
+  grid-area: urbano;
+}
+
+.olivosBacha {
+  -ms-grid-row: 14;
+  -ms-grid-column: 3;
+  grid-area: bacha;
+}
+
+.olivosUrbanoD {
+  -ms-grid-row: 14;
+  -ms-grid-column: 4;
+  grid-area: urbanodos;
+}
+
+.olivosBachaD {
+  -ms-grid-row: 14;
+  -ms-grid-column: 5;
+  grid-area: bachados;
+}
+
+.olivosUrbanoT {
+  -ms-grid-row: 14;
+  -ms-grid-column: 6;
+  grid-area: urbanotres;
+}
+
+.olivosSalsa {
+  -ms-grid-row: 14;
+  -ms-grid-column: 7;
+  grid-area: salsa;
+}
+
+.veintehoras {
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  grid-area: veintehoras;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.olivosReggaeton {
+  -ms-grid-row: 15;
+  -ms-grid-column: 2;
+  grid-area: reggaeton;
+}
+
+.olivosHiph {
+  -ms-grid-row: 15;
+  -ms-grid-column: 3;
+  grid-area: hiphop;
+}
+
+.olivosReggaetonD {
+  -ms-grid-row: 15;
+  -ms-grid-column: 4;
+  grid-area: reggaetondos;
+}
+
+.olivosHiphD {
+  -ms-grid-row: 15;
+  -ms-grid-column: 5;
+  grid-area: hiphopdos;
+}
+
+.olivosReggaetonT {
+  -ms-grid-row: 15;
+  -ms-grid-column: 6;
+  grid-area: reggaetontres;
+}
+
+.olivosNada {
+  -ms-grid-row: 15;
+  -ms-grid-column: 7;
+  grid-area: vacio;
+  text-align: center;
+  padding: 1rem;
+}
+
+.borde {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: white;
+}
+
+.borde-sede {
+  margin: 6rem 0rem 1rem 7rem;
+  padding: 1rem;
+  border-right: 1rem solid orange;
+  border-bottom: 1rem solid lightslategray;
+}
+
+.titulo-presenciales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulo-presenciales__title {
+  padding: 3rem;
+  text-shadow: 1px 11px 5px #41464bb8;
+}
+
+.titulo-presenciales__parrafo {
+  padding-bottom: 0.5rem;
+}
+
+.titulo-presenciales__parrafo--bold {
+  font-weight: bold;
+}
+
+.sedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sedes__title {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  margin: 4rem 0rem 4rem 3rem;
+  border-right: 0.6rem solid orange;
+  border-bottom: 0.6rem solid lightslategray;
+}
+
+.galeria-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galeria-flex .galeria {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+  margin: 1rem auto;
+  width: 270px;
+  height: 280px;
+}
+
+.galeria-flex .galeria:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.galeria-flex .galeria__adelante {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0 3px 17px #333333;
+          box-shadow: 0 3px 17px #333333;
+  background-color: white;
+}
+
+.galeria-flex .galeria__adelante--imagen {
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria-flex .galeria__texto-ritmo {
+  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
+  background-image: linear-gradient(to left, orange, #ce650b82);
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.galeria-flex .galeria__atras {
+  background: #b9f;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.galeria-flex .galeria__atras--texto {
+  -webkit-box-shadow: 0 0 10px 2px #ff8100;
+          box-shadow: 0 0 10px 2px #ff8100;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+.galeria div {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -338,7 +1167,7 @@ body {
 }
 
 .nav-fondo {
-  background-image: url(../media/fondoHeader.png);
+  background-image: url(../media/fondo-header.png);
 }
 
 .principal {
@@ -476,36 +1305,11 @@ body {
 }
 
 .img-footer {
-  background-image: url(../media/fondoFooter.png);
+  background-image: url(../media/fondo-footer.png);
 }
 
 .fb, .ig, .yt {
   width: 3rem;
-}
-
-/*CLASES PRESENCIALES*/
-.borde-galeria {
-  border: 4px solid #9f27f5;
-}
-
-.img-width {
-  width: 8rem;
-}
-
-.btn-ritmos {
-  padding: 1rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
-  background-image: linear-gradient(to left, orange, #ce650b82);
-  margin: 2rem 1rem;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.sede-olivos, .sede-palermo {
-  padding: 2rem;
-  margin: 6rem 0rem 4rem 1rem;
-  border-right: 1rem solid orange;
-  border-bottom: 1rem solid lightslategray;
 }
 
 /*CLASES VIRTUALES*/
