@@ -15,7 +15,7 @@
   <header>
     <nav class="nav-fondo pt-5 pb-3 navbar navbar-dark navbar-expand-lg">
         <div class="container align-items-end py-4 mt-2">
-          <a class="navbar-brand text-end pt-5 ms-5" href="./index.html"><img class="img-fluid w-75" src="./media/logo.png" alt="logo"></a>
+          <a class="navbar-brand text-end pt-5 ms-2" href="./index.html"><img class="img-fluid w-75" src="./media/logo.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,13 +50,15 @@
         </div>
     </nav>
  </header>  
+
  <main> 
     
     <section class="principal">
         <div class="principal__img">
-          <h1 class="pt-4 principal__titulo principal__titulo--align">Bienvenidos a <span>Estudio libre movimiento</span></h1> 
+          <h1 class="principal__titulo">Bienvenidos a <span>Estudio libre movimiento</span></h1> 
         </div>
     </section>
+
     <section class="presentacion">
       <div class="container text-center p-5">
           <h2 class="fs-2 pt-5">¿Quienes somos?</h2>
@@ -74,16 +76,13 @@
                       <img src="./media/img-carousel-dos.png" class="d-block w-100" alt="img-carousel">
                     </div>
                     <div class="carousel-item">
-                      <img src="./media/img-carousel-tres.png" class="d-block w-100" alt="img-carousel">
+                      <img src="./media/img-carousel-tres.png" class="d-block w-1000" alt="img-carousel">
                     </div>
                     <div class="carousel-item">
                       <img src="./media/img-carousel-cuatro.png" class="d-block w-100" alt="img-carousel">
                     </div>
                     <div class="carousel-item">
                       <img src="./media/img-carousel-cinco.png" class="d-block w-100" alt="img-carousel">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./media/img-carousel-seis.png" class="d-block w-100" alt="img-carousel">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -99,56 +98,53 @@
           </div>
       </div>
     </section>
-    <section>
-      <div class="container-fluid">
-          <h2 class="text-center text-uppercase mt-5 fs-2">Testimonios</h2>
-          <div class="row text-center mt-5"">
-              <div class="testimonios">
-                  <div class="testimonios__cuadros testimonios__cuadros--borde">
-                      <div class="testimonios__comillas">"</div>
-                      <p><em>excente escuela de Danza y la calidad humana de los profesores y el personal del lugar es maravilloso. Mi hija va hace 3 años y lo súper recomiendo.</em></p>
-                      <div class="testimonios__comillas testimonios__comillas--derecha">"</div>
-                      <p class="bq fs-5 blockquote-footer">Pepa Pepita</p>
-                  </div>
-                  <div class="testimonios__cuadros testimonios__cuadros--borde">
-                      <div class="testimonios__comillas">"</div>
-                      <p><em>Los profesores son excelentes, crean un ambiente cálido de aprendizaje y también de diversión. Se siente una energía especial en el lugar ...y la gente muy copada...Muy recomendable!!!</em></p>
-                      <div class="testimonios__comillas testimonios__comillas--derecha">"</div>
-                      <p class="bq fs-5 blockquote-footer">Pupe Papa</p>
-                  </div>
-                  <div class="testimonios__cuadros testimonios__cuadros--borde">
-                      <div class="testimonios__comillas">"</div>
-                      <p><em>Me encanta siempre que estoy triste entrar ahi cambia mi humor los profes son excelentes motivan ayudan te hacen reir y la gente es muy compañera si pudiera estaria ahi las 24 hrs del dia.</em></p>
-                      <div class="testimonios__comillas testimonios__comillas--derecha">"</div>
-                      <p class="quote-foot fs-5 blockquote-footer">Pipa Pupu</p>
-                  </div>
-              </div>
-          </div>
+
+    <section class="testimonios">
+      <h2 class="testimonios__title">Testimonios</h2>
+      <div class="testimonios__flex">
+        <div class="testimonios__cuadros">
+          <div class="testimonios__comillas">"</div>
+          <p><em>excente escuela de Danza y la calidad humana de los profesores y el personal del lugar es maravilloso. Mi hija va hace 3 años y lo súper recomiendo.</em></p>
+          <div class="testimonios__comillas testimonios__comillas--derecha">"</div>
+          <blockquote class="testimonios__quote">—Pepa Pepita</blockquote>
+        </div>
+        <div class="testimonios__cuadros">
+          <div class="testimonios__comillas">"</div>
+          <p><em>Los profesores son excelentes, crean un ambiente cálido de aprendizaje y también de diversión. Se siente una energía especial en el lugar ...y la gente muy copada...Muy recomendable!!!</em></p>
+          <div class="testimonios__comillas testimonios__comillas--derecha">"</div>
+          <blockquote class="testimonios__quote">—Pupe Papa</blockquote>
+        </div>
+        <div class="testimonios__cuadros">
+          <div class="testimonios__comillas">"</div>
+          <p><em>Me encanta siempre q estoy triste entrar ahi cambia mi humor los profes son excelentes motivan ayudan hacen reir y la gente es muy compañera, estaria ahi las 24hrs del dia.</em></p>
+          <div class="testimonios__comillas testimonios__comillas--derecha">"</div>
+          <blockquote class="testimonios__quote">—Pipa Pupu</blockquote>
+        </div>
       </div>
    </section>
-   <section class="btnBailar">
-      <div class="btnBailar__texto"> 
-         <h3 class="fs-3">¡Elegí tu estilo y veni a bailar!</h3>
-       </div>
-        <div class="btnBailar__btn"> 
-            <a class="btnBailar__btn btnBailar__btn--decor" href="./vistas/presenciales.html">Ver clases</a>
-         </div> 
-   </section>      
+
+   <section class="btn-bailar"> 
+      <h3 class="btn-bailar__texto">¡Elegí tu estilo y veni a bailar!</h3>
+      <div class="btn-bailar__btn"> 
+        <a class="btn-bailar__btn btn-bailar__btn--decor" href="./vistas/presenciales.html">Ver clases</a>
+      </div> 
+   </section>    
+
    <section class="carta">
-            <div class="carta__flex"> 
-                <div><img src="./media/imgInicio.png" class="carta__flex--tamaño" alt="carta-uno-inicio"> </div>
-                <a class="carta__link" href="./vistas/horarios.html">Conoce nuestros horarios</a>
-            </div>
+      <div class="carta__flex"> 
+        <div><img src="./media/img-inicio.png" class="carta__flex--tamaño" alt="imagen-baile-fondo-negro"> </div>
+        <a class="carta__link" href="./vistas/horarios.html">Conoce nuestros horarios</a>
+      </div>
 
-            <div class="carta__flex"> 
-                <div><img src="./media/imgInicio2.png" alt="carta-dos-inicio" class="carta__flex--tamaño"> </div>
-                <a class="carta__link" href="./vistas/novedades.html">Enterate de nuestras novedades</a>
-            </div>
+      <div class="carta__flex"> 
+        <div><img src="./media/img-inicio-dos.png" alt="imagen-baile-fondo-negro" class="carta__flex--tamaño"> </div>
+        <a class="carta__link" href="./vistas/novedades.html">Enterate de nuestras novedades</a>
+      </div>
 
-            <div class="carta__flex"> 
-                <div><img src="./media/imgInicio3.png" class="carta__flex--tamaño" alt="carta-tres-inicio"> </div>
-                <a class="carta__link" href="./vistas/contacto.html">¡Animate y contactanos!</a>
-            </div>
+      <div class="carta__flex"> 
+        <div><img src="./media/img-inicio-tres.png" class="carta__flex--tamaño" alt="imagen-baile-fondo-negro"> </div>
+         <a class="carta__link" href="./vistas/contacto.html">¡Animate y contactanos!</a>
+      </div>
   </section>  
 
  </main> 

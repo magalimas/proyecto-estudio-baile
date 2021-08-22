@@ -1,0 +1,161 @@
+@import "../partials/variables";
+@import "../partials/media-queries";
+
+
+
+.principal {
+    @include movil {
+        
+    }
+    &__img {
+        background-image: url(../media/img-ppal.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        @include movil {
+          background-size: cover;
+          background-position: top;
+        }
+    } 
+    &__titulo {
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+    } & span {
+          text-transform: none;
+          letter-spacing: 0.3rem;
+    }
+}
+
+
+
+.testimonios {
+    text-align: center;
+    margin-top: 5rem;
+    &__title {
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    }
+    &__flex {
+        display: flex;
+        margin: 1rem;
+        @include movil {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+    &__cuadros {
+        width: 75%;
+        padding: 1rem;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: $bordenegro;
+        background-color: $bgblanco;
+        @include tablet {
+            width: 50%;
+        }
+    } &__comillas {
+        color:  #9f27f5;
+        font-size: 3rem;
+        text-align: start;
+        &--derecha {
+            text-align: end;
+        }
+    } 
+    &__quote {
+        color: gray;
+    }
+}
+
+
+
+.btn-bailar {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    @include movil {
+        flex-direction: column;
+    }
+    &__texto {
+        text-decoration: underline dotted black;
+        padding-right: 11rem;
+        @include movil {
+            padding: 2.5rem;
+            text-align: center;
+        }
+    } &__btn {
+        font-size: 1.3rem;
+        color: black;
+        transition: 1.5s ease;
+        @include movil {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        &:hover {
+            transform: scale(1.1);
+            border-radius: 1rem;
+        }
+        &--decor {
+            text-decoration: none;
+            background-image: linear-gradient(to left, orange, #ce650b82);
+            padding: 1.2rem;
+        } &--decor:hover {
+            color: lightyellow;
+        }
+    }
+} 
+
+.carta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    @include movil {
+      grid-template-columns: 1fr;
+      padding-bottom: 5rem;  
+    }
+    @include tablet {
+        grid-template-columns: auto;
+    }
+    @include pan-grande {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+    }
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        transition: 1.5s ease;
+        @include movil {
+            padding: 1.2rem;
+        }
+        &:hover {
+            transform: scale(0.9);
+        }
+        &--tamaño {
+            width: 300px;
+            @include movil {
+                width: 250px;
+            }
+        }
+    } 
+      &__link {
+        color: black;
+        text-decoration: none;
+        background-image: $gradientorange;
+        padding: 0.8rem;
+        @include movil {
+            padding: 0.4rem;
+        }
+    } &__link:hover{
+        color: lightyellow;
+        border-radius: 1rem;
+    }
+}
