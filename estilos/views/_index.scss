@@ -10,14 +10,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
-        @include movil {
-          background-size: cover;
-          background-position: top;
-        }
     } 
     &__titulo {
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: $fsdefault * 1.8;
+        padding: $paddingdefault - 1;
         text-align: center;
     } & span {
           text-transform: none;
@@ -27,17 +23,17 @@
 
 .carousel__texto {
     @include pan-grande {
-        font-size: 0.9rem;
+        font-size: $fsdefault - 0.1;
     }
     @include movil {
-        font-size: 0.8rem;
+        font-size: $fsdefault - 0.2;
     }
 }
 
 .carousel__espacio {
-    padding-top: 2rem;
+    padding-top: $paddingdefault;
     @include pan-grande {
-        padding-top: 3rem;
+        padding-top: $paddingdefault + 1;
     }
 }
 
@@ -45,14 +41,14 @@
 
 .testimonios {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: $margdefault + 3;
     &__title {
         text-transform: uppercase;
-        padding-bottom: 2rem;
+        padding-bottom: $paddingdefault;
     }
     &__flex {
         display: flex;
-        margin: 1rem;
+        margin: $margdefault;
         @include movil {
             flex-direction: column;
             align-items: center;
@@ -63,8 +59,8 @@
     }
     &__cuadros {
         width: 75%;
-        padding: 1rem;
-        margin: 2rem;
+        padding: $paddingdefault - 1;
+        margin: $margdefault;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -75,7 +71,7 @@
         }
     } &__comillas {
         color:  #9f27f5;
-        font-size: 3rem;
+        font-size: $fsdefault * 3;
         text-align: start;
         &--derecha {
             text-align: end;
@@ -91,35 +87,35 @@
 .btn-bailar {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: $margdefault * 4;
     @include movil {
         flex-direction: column;
     }
     &__texto {
         text-decoration: underline dotted black;
-        padding-right: 11rem;
+        padding-right: $paddingdefault + 9;
         @include movil {
-            padding: 2.5rem;
+            padding: $paddingdefault + 0.5;
             text-align: center;
         }
     } &__btn {
-        font-size: 1.3rem;
+        font-size: $fsdefault + 0.3;
         color: black;
         transition: 1.5s ease;
         @include movil {
             text-align: center;
-            margin-bottom: 5rem;
+            margin-bottom: $margdefault + 3;
         }
         &:hover {
             transform: scale(1.1);
-            border-radius: 1rem;
+            border-radius: $borde-circular;
         }
         &--decor {
             text-decoration: none;
             background-image: linear-gradient(to left, orange, #ce650b82);
-            padding: 1.2rem;
+            padding: $paddingdefault - 0.8;
         } &--decor:hover {
-            color: lightyellow;
+            color: $color-btn-hover;
         }
     }
 } 
@@ -130,7 +126,7 @@
     grid-column-gap: 1rem;
     @include movil {
       grid-template-columns: 1fr;
-      padding-bottom: 5rem;  
+      padding-bottom: $paddingdefault + 3;  
     }
     @include tablet {
         grid-template-columns: auto;
@@ -145,11 +141,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: $paddingdefault * 3;
+        padding-bottom: $paddingdefault * 3;
         transition: 1.5s ease;
         @include movil {
-            padding: 1.2rem;
+            padding: $paddingdefault - 0.8;
         }
         &:hover {
             transform: scale(0.9);
@@ -165,12 +161,12 @@
         color: black;
         text-decoration: none;
         background-image: $gradientorange;
-        padding: 0.8rem;
+        padding: $paddingdefault - 1.2;
         @include movil {
-            padding: 0.4rem;
+            padding: $paddingdefault - 1.6;
         }
     } &__link:hover{
-        color: lightyellow;
-        border-radius: 1rem;
+        color: $color-btn-hover;
+        border-radius: $borde-circular;
     }
 }

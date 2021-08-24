@@ -11,15 +11,8 @@
   height: 100vh;
 }
 
-@media screen and (min-width: 270px) and (max-width: 732px) {
-  .principal__img {
-    background-size: cover;
-    background-position: top;
-  }
-}
-
 .principal__titulo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1rem;
   text-align: center;
 }
@@ -65,7 +58,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
@@ -315,7 +308,7 @@
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
   .titulo-presenciales__parrafo {
-    padding: 0.4;
+    padding: 0.4rem;
     font-size: 0.8rem;
     margin: 0rem 1.2rem;
     text-align: center;
@@ -413,7 +406,7 @@
 .galeria-flex__texto-ritmo {
   background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
   background-image: linear-gradient(to left, orange, #ce650b82);
-  padding: 0.8rem;
+  padding: 1.2rem;
   font-size: 1.1rem;
   cursor: pointer;
 }
@@ -765,10 +758,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
       grid-template-areas: " nada lunes martes miercoles jueves viernes sabado" "nueveymedia cuadroZumba cuadroKpop cuadroZumbaD cuadroKpopD cuadroZumbaT cuadroSalsa" "quinceHoras cuadroJazz cuadroBallet ion cuadroJazzD cuadroBalletD ionD" "diecisietetreinta reggFusion dancehall reggFusionDos dancehallD reggFusionT streetjazz" "dieciochotreinta femme bachata femmeD bachataD femmeT bachataT" "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn";
-  overflow-x: auto;
+  overflow: auto;
 }
 
 .lunes {
@@ -1029,10 +1020,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-      grid-template-areas: "none l m mi j v s " "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños" "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion" "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon" "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa" "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio";
   overflow-x: auto;
+      grid-template-areas: "none l m mi j v s " "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños" "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion" "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon" "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa" "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio";
 }
 
 .l {
@@ -1364,6 +1353,7 @@
   -webkit-box-shadow: 0 3px 17px #333333;
           box-shadow: 0 3px 17px #333333;
   padding: 1.5rem;
+  margin-bottom: 2rem;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -1386,8 +1376,8 @@
 }
 
 .contenedor-precios__texto--espacio {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .contenedor-precios__textofinal {
@@ -1397,7 +1387,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
 }
 
 .contenedor-precios__textofinal::before {
@@ -1593,6 +1584,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1602,7 +1595,7 @@
 }
 
 .formulario__radio--espacio {
-  padding: 0.8rem;
+  padding: 1.8rem;
 }
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
@@ -1625,11 +1618,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .formulario__checkbox--espacio {
-  margin: 1rem;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
+  background-image: linear-gradient(to left, orange, #ce650b82);
+}
+
+.formulario__checkbox-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario__input {
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+}
+
+.formulario__input:focus {
+  width: 160px;
+  height: 30px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 * {

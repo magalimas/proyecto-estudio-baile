@@ -3,13 +3,19 @@
 
 
 $color-ppal: #bb99ffa8;
-$bordenegro: 1px solid black;
 $bgblanco: white;
+$color-btn-hover: lightyellow;
+
 $gradientorange: linear-gradient(to left, orange, #ce650b82);
+
 $sombra-titulo: 1px 11px 5px #41464bb8;
 $sombra-naranja: 0 0 10px 2px #ff8100;
+
+$bordenegro: 1px solid black;
 $bordenaranja: 0.6rem solid orange;
 $bordegris: 0.6rem solid lightslategray;
+
+$borde-circular: 1rem;
 
 
 /*TAMAÑOS*/
@@ -17,4 +23,3 @@ $bordegris: 0.6rem solid lightslategray;
 $paddingdefault: 2rem;
 $fsdefault: 1rem;
 $margdefault: 2rem;
-$widthdef: 100rem;

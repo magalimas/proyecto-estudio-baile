@@ -40,10 +40,10 @@
         flex-direction: column;
         align-items: center;
         &--tamaño{
-            padding-top: 3rem;
+            padding-top: $paddingdefault + 1;
         }
         @include movil {
-            padding: 1rem;
+            padding: $paddingdefault - 1;
             overflow: hidden;
             margin-right: $margdefault;
             margin-left: $margdefault;
@@ -51,10 +51,11 @@
     } 
     &__radio{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         &--espacio{
-            padding: 0.8rem;
+            padding: $paddingdefault - 0.2;
         }
         @include movil {
             flex-direction: column;
@@ -64,11 +65,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 1rem;
+        padding-top: $paddingdefault;
         &--espacio{
-            margin: 1rem;
+            margin: $margdefault;
+            padding: $paddingdefault - 1 $paddingdefault;
+            background-image: $gradientorange;
+        }
+        &-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
+    &__input {
+        transition: 1.5s ease;
+        &:focus{  
+        width: 160px;
+        height: 30px;
+        transform:scale(1.1);
+      }
+    }
+    
 }
-
 

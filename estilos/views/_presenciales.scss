@@ -7,17 +7,17 @@
   align-items: center;
   text-align: center;
   &__title {
-    padding: 3rem;
+    padding: $paddingdefault + 1;
     text-shadow: $sombra-titulo;
   }
   &__parrafo {
-    padding-bottom: 0.5rem;
+    padding-bottom: $paddingdefault - 1.5;
     &--bold {
       font-weight: bold;
     }
     @include movil {
-      padding: 0.4;
-      font-size: 0.8rem;
+      padding: $paddingdefault - 1.6;
+      font-size: $fsdefault - 0.2;
       margin: 0rem 1.2rem;
       text-align: center;
     }
@@ -30,13 +30,13 @@
     justify-content: center;
   }
   &__title {
-    padding: 1.2rem;
-    font-size: 1.8rem;
+    padding: $paddingdefault - 0.8;
+    font-size: $fsdefault + 0.8;
     margin: 4rem 0rem 4rem 3rem;
     border-right: $bordenaranja;
     border-bottom: $bordegris;
     @include movil {
-      font-size: 1.2rem;
+      font-size: $fsdefault + 0.2;
       text-align: center;
       margin: 4rem 1rem 2rem 2rem;
     }
@@ -76,8 +76,8 @@
   } 
   &__texto-ritmo {
     background-image: $gradientorange;
-    padding: 0.8rem;
-    font-size: 1.1rem;
+    padding: $paddingdefault - 0.8;
+    font-size: $fsdefault + 0.1;
     cursor: pointer;
   }
   &__atras {
@@ -87,7 +87,7 @@
     backface-visibility: hidden;
     background: #b9f;
     transform: rotateY(180deg);
-    border-radius: 2rem;
+    border-radius: $borde-circular + 1;
     display: flex;
     flex-direction: column;
     align-items: center;

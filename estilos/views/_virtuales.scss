@@ -157,11 +157,11 @@
         background-image: $gradientorange;
         padding: $paddingdefault - 0.5;
         font-size: $fsdefault + 0.5;
-        border-radius: 1rem;
+        border-radius: $borde-circular;
         transition: 1.5s ease;
         &:hover {
             transform: scale(2.5);
-            color: lightyellow;
+            color: $color-btn-hover;
             
         }
     }

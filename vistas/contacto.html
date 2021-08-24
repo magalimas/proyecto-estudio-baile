@@ -72,17 +72,17 @@
                 <div class="formulario">
                     <div>
                         <label for="Name">Nombre</label>
-                        <input type="text" name="Name" id="Name" placeholder="Introduzca su nombre" required>
+                        <input type="text" name="Name" id="Name" placeholder="Introduzca su nombre" required class="formulario__input">
                     </div>
                     <div>
                         <label for="Surname">Apellido</label>
-                        <input type="text" name="Surname" id="Surname" placeholder="Introduzca su apellido"required>
+                        <input type="text" name="Surname" id="Surname" placeholder="Introduzca su apellido"required class="formulario__input">
                     </div>
                 </div>    
                 <div class="formulario__mail">
                     <div>
                         <label for="Email">Email</label>
-                        <input type="text" name="Email" id="Email" placeholder="Introduzca su email" required>
+                        <input type="text" name="Email" id="Email" placeholder="Introduzca su email" required class="formulario__input">
                     </div>
                     <div>
                         <select name="Sedes" id="Sedes" required>
@@ -94,7 +94,7 @@
                  </div>    
                     <div class="formulario__textarea">
                         <p>Comentanos tus horarios disponibles o lo que quieras decirnos...</p>
-                        <textarea name="mensaje" id="mensaje" cols="70" rows="3" placeholder="Escribe tu mensaje aquí..." ></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="55" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
                         <div class="formulario__textarea--tamaño">¿Cómo nos conociste?</div>
                     </div>
     
@@ -119,7 +119,7 @@
                             <label for="Acepta">Acepta las políticas de privacidad</label>
                             <input type="checkbox" name="Acepta" id="Acepta">
                         </div>   
-                        <div>
+                        <div class="formulario__checkbox-flex">
                             <input type="submit" value="Enviar" class="formulario__checkbox--espacio">
                             <input type="reset" value="Resetear" class="formulario__checkbox--espacio">
                         </div> 
