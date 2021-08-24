@@ -3,6 +3,7 @@
 @import "./views/presenciales";
 @import "./views/virtuales";
 @import "./views/horarios";
+@import "./views/promos";
 @import "./views/contacto";
 @import "./views/novedades";
 
@@ -31,91 +32,6 @@ body {
 .fb, .ig, .yt{
     width: 3rem;
 }
-
-
-
-
-
-  /*CLASES VIRTUALES*/
-
-
-
- div row, span {
-    text-transform: uppercase;
-    font-weight: bolder;
-  }
-  
- .bordesizq {
-   border-left: 10px solid rgba(63, 58, 58, 0.432);
-   border-top: 10px solid lightsalmon;
- }
- 
- .bordesdere {
-   border-right: 10px solid rgba(63, 58, 58, 0.432);
-   border-top: 10px solid lightsalmon;
- }
- 
- .bordeizqd {
-   border-left: 10px solid rgba(63, 58, 58, 0.432);
-   border-bottom: 10px solid lightsalmon;
- }
- 
- .bordesdered {
-   border-right: 10px solid rgba(63, 58, 58, 0.432);
-   border-bottom: 10px solid lightsalmon;
- }
-   
- .btn-mas-info{
-   color: black;
-   font-size: 1.3rem;
-   text-decoration: none;
-   padding: 2rem;
-   background-image: linear-gradient(to left, orange, #ce650b82);  
- }  
-
-
-
-
-
-
-   
-  /*VALORES Y PROMOCIONES*/
-  
-  
-  
-  .titulo-promo{
-    text-decoration: double underline black;
-  }
-
-  .transform-precio:hover{
-    transform: scale(1.2);
-  }
-
-  .under {
-    text-decoration: underline double;
-  }
-  
-  .bordenaran{
-    text-decoration: underline 3px solid orange;
-  }
-
-  .bordenaran::after{
-    content: "!";
-    font-size: 2rem;
-    font-weight: bold;
-    color: orange;
-    padding: 0.2rem;
-  }  
-
-  .bordenaran::before{
-    content: "!";
-    font-size: 2rem;
-    font-weight: bold;
-    color: orange;
-    padding: 0.2rem;
-  }
-
-
 
 
 

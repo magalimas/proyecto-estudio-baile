@@ -768,8 +768,7 @@
   margin-left: 2rem;
   margin-right: 2rem;
       grid-template-areas: " nada lunes martes miercoles jueves viernes sabado" "nueveymedia cuadroZumba cuadroKpop cuadroZumbaD cuadroKpopD cuadroZumbaT cuadroSalsa" "quinceHoras cuadroJazz cuadroBallet ion cuadroJazzD cuadroBalletD ionD" "diecisietetreinta reggFusion dancehall reggFusionDos dancehallD reggFusionT streetjazz" "dieciochotreinta femme bachata femmeD bachataD femmeT bachataT" "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn";
-  max-width: 100%;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .lunes {
@@ -1030,11 +1029,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
       grid-template-areas: "none l m mi j v s " "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños" "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion" "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon" "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa" "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio";
-  max-width: 100%;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .l {
@@ -1313,6 +1311,114 @@
 
 /*COLORES*/
 /*TAMAÑOS*/
+.promo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.promo-title__title {
+  padding: 3rem;
+  text-shadow: 1px 11px 5px #41464bb8;
+}
+
+.promo-title__limitada {
+  -webkit-text-decoration: double underline black;
+          text-decoration: double underline black;
+  padding-bottom: 1rem;
+}
+
+.contenedor-precios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.contenedor-precios__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 17px #333333;
+          box-shadow: 0 3px 17px #333333;
+  padding: 1rem;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.contenedor-precios__texto:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contenedor-precios__texto span {
+  -webkit-text-decoration: underline double red;
+          text-decoration: underline double red;
+}
+
+.contenedor-precios__texto--bold {
+  font-weight: bold;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 0 10px 2px #ff8100;
+          box-shadow: 0 0 10px 2px #ff8100;
+}
+
+.contenedor-precios__texto--espacio {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.contenedor-precios__textofinal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem;
+}
+
+.contenedor-precios__textofinal::before {
+  content: "*";
+  color: rgba(216, 134, 39, 0.884);
+  font-size: 5rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .contenedor-precios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem 5rem;
+  }
+}
+
+/*COLORES*/
+/*TAMAÑOS*/
 .contacto {
   padding: 6rem;
 }
@@ -1507,76 +1613,4 @@ body {
 
 .fb, .ig, .yt {
   width: 3rem;
-}
-
-/*CLASES VIRTUALES*/
-div row, span {
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-.bordesizq {
-  border-left: 10px solid rgba(63, 58, 58, 0.432);
-  border-top: 10px solid lightsalmon;
-}
-
-.bordesdere {
-  border-right: 10px solid rgba(63, 58, 58, 0.432);
-  border-top: 10px solid lightsalmon;
-}
-
-.bordeizqd {
-  border-left: 10px solid rgba(63, 58, 58, 0.432);
-  border-bottom: 10px solid lightsalmon;
-}
-
-.bordesdered {
-  border-right: 10px solid rgba(63, 58, 58, 0.432);
-  border-bottom: 10px solid lightsalmon;
-}
-
-.btn-mas-info {
-  color: black;
-  font-size: 1.3rem;
-  text-decoration: none;
-  padding: 2rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
-  background-image: linear-gradient(to left, orange, #ce650b82);
-}
-
-/*VALORES Y PROMOCIONES*/
-.titulo-promo {
-  -webkit-text-decoration: double underline black;
-          text-decoration: double underline black;
-}
-
-.transform-precio:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.under {
-  -webkit-text-decoration: underline double;
-          text-decoration: underline double;
-}
-
-.bordenaran {
-  -webkit-text-decoration: underline 3px solid orange;
-          text-decoration: underline 3px solid orange;
-}
-
-.bordenaran::after {
-  content: "!";
-  font-size: 2rem;
-  font-weight: bold;
-  color: orange;
-  padding: 0.2rem;
-}
-
-.bordenaran::before {
-  content: "!";
-  font-size: 2rem;
-  font-weight: bold;
-  color: orange;
-  padding: 0.2rem;
 }

@@ -49,8 +49,7 @@
     "dieciochotreinta femme bachata femmeD bachataD femmeT bachataT"
     "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn"
     ;  
-    max-width: 100%;
-    overflow: auto;
+    overflow: scroll;
 } 
   
   .lunes {
@@ -236,8 +235,8 @@
   .grid-olivos{
     display: grid;
     justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     grid-template-areas: 
     "none l m mi j v s "
     "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños"
@@ -246,8 +245,7 @@
     "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa"
     "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio"
     ;  
-    max-width: 100%;
-    overflow: auto;
+    overflow: scroll;
   }
 
   .l {
