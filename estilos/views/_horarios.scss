@@ -1,111 +1,86 @@
-@import "./variables";
+@import "../partials/variables";
+@import "../partials/media-queries";
 
-.gridHorarios {
+%deco-dias{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: lightsalmon;
+}
+
+%dias-semana{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+
+.title-horarios{
+  text-align: center;
+  padding: 3rem;
+  text-shadow: $sombra-titulo;
+}
+
+.horario-subtitle {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2rem;
+}
+
+.letra-color {
+  color: #ff7f24;
+  font-size: 3rem;
+  margin: 3rem 0rem 6rem 4rem;
+}
+
+.grid-palermo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 5) , 1fr));
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
     grid-template-areas: 
-    "titulo titulo titulo titulo titulo titulo titulo"
-    "horarioPalermo horarioPalermo . . . . ."
     " nada lunes martes miercoles jueves viernes sabado"
     "nueveymedia cuadroZumba cuadroKpop cuadroZumbaD cuadroKpopD cuadroZumbaT cuadroSalsa"
     "quinceHoras cuadroJazz cuadroBallet ion cuadroJazzD cuadroBalletD ionD"
     "diecisietetreinta reggFusion dancehall reggFusionDos dancehallD reggFusionT streetjazz"
     "dieciochotreinta femme bachata femmeD bachataD femmeT bachataT"
     "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn"
-    "horarioOlivos horarioOlivos . . . . ."
-    "none l m mi j v s "
-    "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños"
-    "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion"
-    "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon"
-    "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa"
-    "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio"
-    ;
-    
-    
-  }
-  
-  .tituloHorarios {
-    grid-area: titulo;
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 7rem;
-  }
-  
-  .horarioPalermo {
-    grid-area: horarioPalermo;
-    display: flex;
-    justify-content: center;
-    margin: 5rem 0rem;
-    padding: 1rem;
-    border-right: 1rem solid orange;
-    border-bottom: 1rem solid lightslategray;
-  }
+    ;  
+    max-width: 100%;
+    overflow: auto;
+} 
   
   .lunes {
     grid-area: lunes;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .martes {
     grid-area: martes;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .miercoles {
     grid-area: miercoles;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .jueves {
     grid-area: jueves;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .viernes {
     grid-area: viernes;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .sabado {
     grid-area: sabado;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .nada {
@@ -114,9 +89,7 @@
   
   .nueveymedia {
     grid-area: nueveymedia;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .cuadroZumba {
@@ -145,9 +118,7 @@
   
   .quinceHoras {
     grid-area: quinceHoras;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .cuadroJazz {
@@ -176,9 +147,7 @@
   
   .diecisietetreinta {
     grid-area: diecisietetreinta;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .cuadroReggaetonF {
@@ -207,9 +176,7 @@
   
   .dieciochotreinta {
     grid-area: dieciochotreinta;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .cuadroFemme {
@@ -238,9 +205,7 @@
   
   .diecinuevetreinta {
     grid-area: diecinuevetreinta;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .cuadroRegg {
@@ -267,80 +232,52 @@
     grid-area: ionn;
   }
   
-  .horarioOlivos {
-    grid-area: horarioOlivos;
-    display: flex;
+
+  .grid-olivos{
+    display: grid;
     justify-content: center;
-    margin: 8rem 0rem 3rem 2rem;
-    padding: 1rem;
-    border-right: 1rem solid orange;
-    border-bottom: 1rem solid lightslategray;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-areas: 
+    "none l m mi j v s "
+    "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños"
+    "oncehoras zumb clasica zumb2 clasica2 zumb3 elongacion"
+    "dieciseishoras reggfus streetj reggfus2 streetj2 reggfus3 olivosIon"
+    "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa"
+    "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio"
+    ;  
+    max-width: 100%;
+    overflow: auto;
   }
-  
+
   .l {
     grid-area: l;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .m {
     grid-area: m;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .mi {
     grid-area: mi;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .j {
     grid-area: j;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .v {
     grid-area: v;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .s {
     grid-area: s;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: lightsalmon;
+    @extend %deco-dias;
   }
   
   .none {
@@ -349,9 +286,7 @@
   
   .nuevehoras {
     grid-area: nuevehoras;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .cuadroLyrical {
@@ -380,9 +315,7 @@
   
   .oncehoras {
     grid-area: oncehoras;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .olivosZumba {
@@ -411,9 +344,7 @@
   
   .dieciseishoras {
     grid-area: dieciseishoras;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .olivosReggF {
@@ -442,9 +373,7 @@
   
   .diecinuevehoras {
     grid-area: diecinuevehoras;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .olivosUrbano {
@@ -473,9 +402,7 @@
   
   .veintehoras {
     grid-area: veintehoras;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bolder;
+    @extend %dias-semana;
   }
   
   .olivosReggaeton {
@@ -505,16 +432,16 @@
   }
   
   .borde {
-    border: 1px solid black;
+    border: $bordenegro;
     text-align: center;
     padding: 1rem;
     font-size: 1.1rem;
-    background-color: white;
+    background-color: $bgblanco;
   }
   
-  .borde-sede{
-    margin: 6rem 0rem 1rem 7rem;
-    padding: 1rem;
-    border-right: 1rem solid orange;
-    border-bottom: 1rem solid lightslategray;
-  }
+.iframe {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10rem;
+  flex-wrap: wrap;
+}
