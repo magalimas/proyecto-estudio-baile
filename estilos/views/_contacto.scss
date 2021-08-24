@@ -1,14 +1,19 @@
 @import "../partials/variables";
+@import "../partials/media-queries";
 
 
 .contacto {
-    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     &__titulo {
-        text-align: center;
+        padding: $paddingdefault + 1;
+        text-shadow: $sombra-titulo;
     }
     &__subtitulo{
         text-align: center;
-        padding: 2rem;
+        padding: $paddingdefault + 1;
     } 
 } 
 
@@ -16,10 +21,19 @@
 .formulario {
     display: flex;
     justify-content: space-evenly;
+    @include movil {
+        flex-direction: column;
+        align-items: center;
+    }
     &__mail{
         display: flex;
         justify-content: space-around;
-        padding: 3rem;
+        padding: $paddingdefault + 1;
+        @include movil {
+            flex-direction: column;
+            padding: $paddingdefault;
+            text-align: center;
+        }
     }
     &__textarea{
         display: flex;
@@ -28,6 +42,12 @@
         &--tamaño{
             padding-top: 3rem;
         }
+        @include movil {
+            padding: 1rem;
+            overflow: hidden;
+            margin-right: $margdefault;
+            margin-left: $margdefault;
+        }
     } 
     &__radio{
         display: flex;
@@ -35,6 +55,9 @@
         justify-content: center;
         &--espacio{
             padding: 0.8rem;
+        }
+        @include movil {
+            flex-direction: column;
         }
     }
     &__checkbox{
@@ -49,14 +72,3 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .formulario {
-
-        margin: 3rem;
-    } .formulario__radio{
-        flex-direction: column;
-    } .formulario__mail{
-        flex-direction: column;
-        align-items: center;
-    }
-}

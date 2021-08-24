@@ -10,19 +10,19 @@
     align-items: center;
     text-align: center;
     &__title {
-        padding: 3rem;
+        padding: $paddingdefault + 1;
         text-shadow: $sombra-titulo;
     }
     &__limitada {
         text-decoration: double underline black;
-        padding-bottom: 1rem;
+        padding-bottom: $paddingdefault - 1;
     }
   }
 
   .contenedor-precios{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 4rem;
+    margin-top: $margdefault * 2;
     &__texto {
         display: flex;
         flex-direction: column;
@@ -30,7 +30,7 @@
         justify-content: center;
         background-color: $bgblanco;
         box-shadow: 0 3px 17px #333333;
-        padding: 1rem;
+        padding: $paddingdefault - 0.5;
         transition: .3s ease;
         &:hover{
             transform: scale(1.2);
@@ -40,7 +40,7 @@
         }
         &--bold {
             font-weight: bold;
-            padding: 0.5rem;
+            padding: $paddingdefault - 1.5;
             box-shadow: $sombra-naranja;
         }
         &--espacio {
