@@ -1,22 +1,28 @@
 @import "../partials/variables";
+@import "../partials/media-queries";
 
 
-.virtuales-firstsection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__tittle {
-        padding-top: $paddingdefault*3;
-        padding-bottom: $paddingdefault*2;
-        font-size: $fsdefault*2.2;
-    }
-    &__parrafo {
-        font-size: $fsdefault/1.2;
-    }
-    &__parrafo--decoration{
+.virtuales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__title {
+    padding: $paddingdefault*1.5;
+    text-shadow: $sombra-titulo;
+  }
+  &__parr {
+    padding-bottom: $paddingdefault - 1.5;
+    &--deco {
         text-decoration: underline;
     }
-       
+  }
+  @include movil {
+    padding: $paddingdefault - 1.6;
+    font-size: $fsdefault - 0.8;
+    margin: 0rem 1.2rem;
+    text-align: center;
+  }
 }
 
 .grid-virtuales {
@@ -25,94 +31,138 @@
     &__izq {
         display: flex;
         flex-direction: column;
-        padding-left: $paddingdefault*1;
-        padding-top: $paddingdefault*1;
-        margin-top: $margdefault*4;
-        margin-left: $margdefault*7;
-        width: $widthdef/5;
+        align-items: center;
+        padding: $paddingdefault - 1;
+        margin: 5rem 4rem 6rem 7rem;
         border-left: 10px solid lightslategrey;
         border-top: 10px solid lightsalmon;
-        &--tittle{
+        &--title{
             font-size: $fsdefault*1.5;
+            @include movil {
+                font-size: $fsdefault + 0.3;
+            }
         }
         &--text{
             font-size: $fsdefault*0.9;
             padding-top: $paddingdefault/2;
+        }
+        @include movil {
+            padding: 1rem 2.5rem 1rem 2.5rem;
+            margin: 5rem 2.5rem 1rem 2.5rem;
+            border: none;
+            box-shadow: $sombra-naranja;
+            width: auto;
+            align-items: center;
         }
     }
     &__dere {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: $paddingdefault*1;
-        margin-top: $margdefault*4;
-        margin-left: $margdefault*4;
-        width: $widthdef/5;
+        padding: $paddingdefault - 1;
+        margin: 5rem 7rem 6rem 3rem;
         border-right: 10px solid lightslategrey;
         border-top: 10px solid lightsalmon;
-        &--tittle{
+        &--title{
             font-size: $fsdefault*1.5;
+            @include movil {
+                font-size: $fsdefault + 0.3;
+            }
         }
         &--text{
             font-size: $fsdefault*0.9;
             padding-top: $paddingdefault/2;
-        }
-        &--decoration{
+            & span {
             text-decoration: underline;
             font-weight: bold;
         }
+      }
+      @include movil {
+        padding: 1rem 2.5rem 1rem 2.5rem;
+        margin: 1rem 2.5rem 1rem 2.5rem;
+        border: none;
+        box-shadow: $sombra-naranja;
+        width: auto;
+        align-items: center;
+      }
     }
-    &__izq2 {
-        display: flex;
-        flex-direction: column;
-        padding-left: $paddingdefault*1;
-        padding-top: $paddingdefault*1;
-        margin-top: $margdefault*4;
-        margin-left: $margdefault*7;
-        margin-bottom: $margdefault*4;
-        width: $widthdef/5;
-        border-left: 10px solid lightslategrey;
-        border-top: 10px solid lightsalmon;
-        &--tittle{
-            font-size: $fsdefault*1.5;
-        }
-        &--text{
-            font-size: $fsdefault*0.9;
-            padding-top: $paddingdefault/2;
-        }
-    }
-    &__deredos{
+      &__izq-dos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: $paddingdefault*1;
-        margin-top: $margdefault*4;
-        margin-left: $margdefault*4;
-        margin-bottom: $margdefault*4;
-        width: $widthdef/5;
-        border-right: 10px solid lightslategrey;
-        border-top: 10px solid lightsalmon;
-        &--tittle{
+        padding: $paddingdefault - 1;
+        margin: 3rem 4rem 7rem 7rem;
+        border-left: 10px solid lightslategrey;
+        border-bottom: 10px solid lightsalmon;
+        &--title{
             font-size: $fsdefault*1.5;
+            @include movil {
+                font-size: $fsdefault + 0.3;
+            }
         }
         &--text{
             font-size: $fsdefault*0.9;
             padding-top: $paddingdefault/2;
         }
+        @include movil {
+            padding: 1rem 2.5rem 1rem 2.5rem;
+            margin: 1rem 2.5rem 1rem 2.5rem;
+            border: none;
+            box-shadow: $sombra-naranja;
+            width: auto;
+            align-items: center;
+        }
+    }
+    &__dere-dos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: $paddingdefault - 1;
+        margin: 3rem 7rem 7rem 3rem;
+        border-right: 10px solid lightslategrey;
+        border-bottom: 10px solid lightsalmon;
+        &--title{
+            font-size: $fsdefault*1.5;
+            @include movil {
+                font-size: $fsdefault + 0.3;
+            }
+        }
+        &--text{
+            font-size: $fsdefault*0.9;
+            padding-top: $paddingdefault/2;
+        }
+        @include movil {
+            padding: 1rem 2.5rem 1rem 2.5rem;
+            margin: 1rem 2.5rem 8rem 2.5rem;
+            border: none;
+            box-shadow: $sombra-naranja;
+            width: auto;
+            align-items: center;
+        }
+    }
+    @include movil {
+        grid-template-columns: 1fr;
     }
 }
 
 
 .btn-virtuales{
     text-align: center;
-    margin-bottom: $margdefault*5;
+    margin: 4rem 0rem 7rem 0rem;
     &__link{
+        text-transform: uppercase;
         text-decoration: none;
         color: black;
         background-image: $gradientorange;
-        padding: $paddingdefault*1;
-        font-size: $fsdefault*1.5;
+        padding: $paddingdefault - 0.5;
+        font-size: $fsdefault + 0.5;
+        border-radius: 1rem;
+        transition: 1.5s ease;
+        &:hover {
+            transform: scale(2.5);
+            color: lightyellow;
+            
+        }
     }
 }
-
-

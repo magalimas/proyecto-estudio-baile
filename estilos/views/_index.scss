@@ -4,9 +4,6 @@
 
 
 .principal {
-    @include movil {
-        
-    }
     &__img {
         background-image: url(../media/img-ppal.png);
         background-position: center;
@@ -25,6 +22,22 @@
     } & span {
           text-transform: none;
           letter-spacing: 0.3rem;
+    }
+}
+
+.carousel__texto {
+    @include pan-grande {
+        font-size: 0.9rem;
+    }
+    @include movil {
+        font-size: 0.8rem;
+    }
+}
+
+.carousel__espacio {
+    padding-top: 2rem;
+    @include pan-grande {
+        padding-top: 3rem;
     }
 }
 
@@ -124,7 +137,9 @@
     }
     @include pan-grande {
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 1rem;
+    }
+    @include pan-enorme {
+        grid-template-columns: repeat(3, 1fr);
     }
     &__flex {
         display: flex;

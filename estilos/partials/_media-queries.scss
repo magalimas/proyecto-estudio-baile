@@ -1,5 +1,12 @@
+@mixin pan-enorme {
+    @media screen and (min-width: 1201px) {
+        @content;
+    }
+}
+
 @mixin pan-grande {
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 950px) 
+    and (max-width: 1200px) {
         @content;
     }
 }
