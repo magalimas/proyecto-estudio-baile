@@ -10,11 +10,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        @include movil {
+            height: auto;
+            padding-bottom: 15rem;
+            background-position: center;
+        }
     } 
     &__titulo {
         font-size: $fsdefault * 1.8;
         padding: $paddingdefault - 1;
         text-align: center;
+        @include movil {
+            padding: $paddingdefault - 0.5;
+            font-size: $fsdefault * 1.5;
+        }
     } & span {
           text-transform: none;
           letter-spacing: 0.3rem;
@@ -45,6 +54,7 @@
     &__title {
         text-transform: uppercase;
         padding-bottom: $paddingdefault;
+        margin-top: $margdefault + 1;
     }
     &__flex {
         display: flex;
@@ -52,6 +62,7 @@
         @include movil {
             flex-direction: column;
             align-items: center;
+            margin: 0rem;
         }
         @include tablet {
             flex-direction: row;
@@ -60,7 +71,7 @@
     &__cuadros {
         width: 75%;
         padding: $paddingdefault - 1;
-        margin: $margdefault;
+        margin: $margdefault - 0.5;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -83,13 +94,13 @@
 }
 
 
-
 .btn-bailar {
     display: flex;
     justify-content: center;
     margin-top: $margdefault * 4;
     @include movil {
         flex-direction: column;
+        margin: 0rem;
     }
     &__texto {
         text-decoration: underline dotted black;

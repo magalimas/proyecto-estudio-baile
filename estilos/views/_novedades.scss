@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     &__title{
         padding: $paddingdefault + 1;
         text-shadow: $sombra-titulo;
@@ -12,6 +13,13 @@
     &__video{
         width: 75%;
         padding-top: $paddingdefault + 1;
+    }
+    @include movil {
+        padding-left: $paddingdefault;
+        padding-right: $paddingdefault;
+        .novedades__video{
+            width: 100%;
+        }
     }
 }
 
@@ -31,6 +39,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: $paddingdefault;
     }
     &--text {
         display: flex;

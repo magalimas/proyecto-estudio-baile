@@ -22,7 +22,13 @@ body {
     @include movil {
       background-size: cover;
       background-repeat: no-repeat;
+      background-position:top;
     }
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    font-size: 0.8rem;
 }
 
 .img-footer {

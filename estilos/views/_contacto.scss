@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     &__titulo {
-        padding: $paddingdefault + 1;
+        padding-top: $paddingdefault + 1;
         text-shadow: $sombra-titulo;
     }
     &__subtitulo{
