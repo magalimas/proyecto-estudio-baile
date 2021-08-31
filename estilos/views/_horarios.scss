@@ -17,7 +17,6 @@
   font-weight: bolder;
 }
 
-
 .title-horarios{
   text-align: center;
   padding: 3rem;
@@ -37,7 +36,6 @@
 
 .grid-palermo {
     display: grid;
-    justify-content: center;
     grid-template-areas: 
     " nada lunes martes miercoles jueves viernes sabado"
     "nueveymedia cuadroZumba cuadroKpop cuadroZumbaD cuadroKpopD cuadroZumbaT cuadroSalsa"
@@ -47,6 +45,10 @@
     "diecinuevetreinta regg hiph regg2 hiph2 regg3 ionn"
     ;  
     overflow: auto;
+    margin: 0rem $margdefault + 5;
+    @include movil {
+      margin: 0rem $margdefault;
+    }
 } 
   
   .lunes {
@@ -231,8 +233,6 @@
 
   .grid-olivos{
     display: grid;
-    justify-content: center;
-    overflow-x: auto;
     grid-template-areas: 
     "none l m mi j v s "
     "nuevehoras lyricalJ tango lyricalJ2 tango2 lyricalJ3 caribeños"
@@ -241,6 +241,11 @@
     "diecinuevehoras urbano bacha urbanodos bachados urbanotres salsa"
     "veintehoras reggaeton hiphop reggaetondos hiphopdos reggaetontres vacio"
     ;  
+    overflow: auto;
+    margin: 0rem $margdefault + 5;
+    @include movil {
+      margin: 0rem $margdefault;
+    }
   }
 
   .l {
@@ -435,6 +440,16 @@
 .iframe {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10rem;
+  margin-bottom: $margdefault * 5;
   flex-wrap: wrap;
+  @include movil {
+    margin-bottom: auto;
+  }
+  &__responsive{
+    @include movil {
+      justify-content: center;
+      width: 75%;
+      padding-bottom: $paddingdefault;
+    }
+  }
 }
