@@ -27,6 +27,9 @@
     } & span {
           text-transform: none;
           letter-spacing: 0.3rem;
+          @include movil {
+              letter-spacing: normal;
+          }
     }
 }
 

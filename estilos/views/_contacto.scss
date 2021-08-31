@@ -9,7 +9,6 @@
     justify-content: center;
     &__titulo {
         padding-top: $paddingdefault + 1;
-        text-shadow: $sombra-titulo;
     }
     &__subtitulo{
         text-align: center;
@@ -43,10 +42,12 @@
             padding-top: $paddingdefault + 1;
         }
         @include movil {
-            padding: $paddingdefault - 1;
-            overflow: hidden;
-            margin-right: $margdefault;
-            margin-left: $margdefault;
+            padding-left: $paddingdefault - 1;
+            padding-right: $paddingdefault - 1;
+            text-align: center;
+            .formulario__textarea__mensaje {
+                width: 75%;
+            }
         }
     } 
     &__radio{
@@ -56,6 +57,9 @@
         justify-content: center;
         &--espacio{
             padding: $paddingdefault - 0.2;
+            @include movil {
+                padding: $paddingdefault - 1.8;
+            }
         }
         @include movil {
             flex-direction: column;

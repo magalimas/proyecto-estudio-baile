@@ -37,6 +37,12 @@
   letter-spacing: 0.3rem;
 }
 
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .principal span {
+    letter-spacing: normal;
+  }
+}
+
 @media screen and (min-width: 950px) and (max-width: 1200px) {
   .carousel__texto {
     font-size: 0.9rem;
@@ -313,7 +319,6 @@
 
 .titulo-presenciales__title {
   padding: 3rem;
-  text-shadow: 1px 11px 5px #41464bb8;
 }
 
 .titulo-presenciales__parrafo {
@@ -480,7 +485,6 @@
 
 .virtuales__title {
   padding: 3rem;
-  text-shadow: 1px 11px 5px #41464bb8;
 }
 
 .virtuales__parr {
@@ -751,7 +755,6 @@
 .title-horarios {
   text-align: center;
   padding: 3rem;
-  text-shadow: 1px 11px 5px #41464bb8;
 }
 
 .horario-subtitle {
@@ -1334,13 +1337,6 @@
 
 .promo-title__title {
   padding: 3rem;
-  text-shadow: 1px 11px 5px #41464bb8;
-}
-
-.promo-title__limitada {
-  -webkit-text-decoration: double underline black;
-          text-decoration: double underline black;
-  padding-bottom: 1rem;
 }
 
 .contenedor-precios {
@@ -1454,7 +1450,6 @@
 
 .novedades__title {
   padding: 3rem;
-  text-shadow: 1px 11px 5px #41464bb8;
 }
 
 .novedades__video {
@@ -1545,7 +1540,6 @@
 
 .contacto__titulo {
   padding-top: 3rem;
-  text-shadow: 1px 11px 5px #41464bb8;
 }
 
 .contacto__subtitulo {
@@ -1613,10 +1607,12 @@
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
   .formulario__textarea {
-    padding: 1rem;
-    overflow: hidden;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .formulario__textarea .formulario__textarea__mensaje {
+    width: 75%;
   }
 }
 
@@ -1636,6 +1632,12 @@
 
 .formulario__radio--espacio {
   padding: 1.8rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .formulario__radio--espacio {
+    padding: 0.2rem;
+  }
 }
 
 @media screen and (min-width: 270px) and (max-width: 732px) {

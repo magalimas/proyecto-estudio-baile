@@ -9,7 +9,6 @@
   text-align: center;
   &__title {
     padding: $paddingdefault*1.5;
-    text-shadow: $sombra-titulo;
   }
   &__parr {
     padding-bottom: $paddingdefault - 1.5;
@@ -162,7 +161,6 @@
         &:hover {
             transform: scale(2.5);
             color: $color-btn-hover;
-            
         }
     }
 }
