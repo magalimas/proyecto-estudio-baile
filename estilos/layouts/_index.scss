@@ -49,8 +49,6 @@
     }
 }
 
-
-
 .testimonios {
     text-align: center;
     margin-top: $margdefault + 3;
@@ -81,7 +79,10 @@
         border: $bordenegro;
         background-color: $bgblanco;
         @include tablet {
-            width: 50%;
+            margin: 0.4rem;
+        }
+        @include pan-grande @include pan-enorme {
+            margin: $margdefault;
         }
     } &__comillas {
         color:  #9f27f5;
@@ -101,6 +102,8 @@
     display: flex;
     justify-content: center;
     margin-top: $margdefault * 4;
+    background-color: #a476ff2b;
+    padding: $paddingdefault + 1;
     @include movil {
         flex-direction: column;
         margin: 0rem;

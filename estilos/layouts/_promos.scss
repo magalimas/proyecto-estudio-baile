@@ -1,14 +1,11 @@
 @import "../partials/variables";
 @import "../partials/media-queries";
-
-
-  
   
 .promo-title{
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    margin: 0rem $margdefault;
     &__title {
         padding: $paddingdefault + 1;
     }
@@ -44,25 +41,30 @@
             padding-left: $paddingdefault * 2;
             padding-right: $paddingdefault * 2;
         }
-     }
-     &__textofinal{
-         display: flex;
-         align-items: center;
-         font-style: italic;
-         padding: $paddingdefault;
-         &::before {
+    }
+    &__textofinal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: italic;
+        margin: $margdefault - 1;
+        background-image: url(../../media/fondo-titulo.png);
+        &::before {
             content: "*";
             color:rgba(216, 134, 39, 0.884);
             font-size: $fsdefault * 5;
             padding: $paddingdefault - 1;
-         }
-     }
-     @include movil {
+        }
+    }
+    @include movil {
         flex-direction: column;
         margin: 2rem 5rem;
     }
     @include tablet {
         flex-wrap: wrap;
+        margin: $margdefault + 1;
+        padding-right: $paddingdefault - 1;
+        padding-left: $paddingdefault - 1;
     }
-  }
+}
 

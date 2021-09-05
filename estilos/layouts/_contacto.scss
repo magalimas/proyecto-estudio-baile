@@ -1,0 +1,154 @@
+@import "../partials/variables";
+@import "../partials/media-queries";
+
+.fondo-triangulos {
+    background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23cab8e7' fill-opacity='0.34'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    padding-bottom: $paddingdefault;
+}
+
+.contacto {
+    text-align: center;
+    padding-top: $paddingdefault + 1;
+} 
+
+.formulario {
+    background-color: #d2bbff59;
+    border: 10px dotted #fdf5e6b5;
+    @include movil {
+        margin: $margdefault + 1;
+    }
+    @include tablet {
+        margin: $margdefault * 3;
+    }
+    @include pan-grande {
+        margin: $margdefault + 1 $margdefault + 7;
+    }
+    &__title {
+        text-align: center;
+        padding: $paddingdefault + 1;
+    }
+    &__name-usern {
+        display: flex;
+        justify-content: center;
+        @include movil {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__mail{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: $paddingdefault + 1;
+        @include movil {
+            flex-direction: column;
+            align-items: center;
+            padding: 0rem;
+        }
+        &__elija-sede {
+            margin: 0.1rem $margdefault * 3.6;
+            padding: $paddingdefault - 1.5;
+            border: $bordelila;
+            @include movil {
+                flex-direction: column;   
+                margin: $margdefault 0rem;
+            }
+            &--color {
+                background-color: #c7b0e9c2;
+            }
+        }
+    }
+    &__textarea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: $margdefault - 1;
+        color: rgba(14, 14, 14, 0.671);
+        &__mensaje {
+          border: $bordelila;
+          outline: none;
+        }
+        &--tamaño{
+            padding-top: $paddingdefault + 1;
+        }
+        @include movil {
+            padding-left: $paddingdefault - 1;
+            padding-right: $paddingdefault - 1;
+            text-align: center;
+            .formulario__textarea__mensaje {
+                width: 75%;
+            }
+        }
+    } 
+    &__radio{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        &--espacio{
+            padding: $paddingdefault - 0.2;
+            @include movil {
+                padding: $paddingdefault - 1.2;
+            }
+        }
+        @include movil {
+            flex-direction: column;
+        }
+    }
+    &__input {
+        transition: 1.5s ease;
+        margin: 0rem $margdefault + 2.5;
+        padding: $paddingdefault - 1.5;
+        border: $bordelila;
+        @include movil {
+            margin: $margdefault - 0.5;
+        }
+        &:focus{  
+           outline: none;
+           width: 170px;
+           height: 40px;
+           transform:scale(1.1);
+      }
+    }
+    &__btn {
+      text-align: center;
+      &--deco {
+        letter-spacing: 1px;
+        padding: $paddingdefault - 1 $paddingdefault;
+        margin: $margdefault + 0.5;
+        border: 1px solid black;
+        position: relative;
+        background-color: transparent;
+        @include movil {
+         margin: $margdefault - 0.5;
+        }
+        &::after {
+         content: ""; 
+         background-image: repeating-linear-gradient(12deg, #ab77bbc7, #f3c9bc00);
+         width: 100%;
+         position: absolute;
+         height: 100%;
+         top: 7px;
+         left: 7px;
+         transition: 0.3s;
+        }
+        &:hover::after {
+         top: 0px;
+         left: 0px;
+        }
+     }
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+

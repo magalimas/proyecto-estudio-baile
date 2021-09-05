@@ -18,7 +18,7 @@
     <header>
       <nav class="nav-fondo pt-4 pb-3 navbar navbar-dark navbar-expand-lg">
           <div class="container align-items-end py-4 mt-2">
-            <a class="navbar-brand text-end pt-5 ms-2" href="../index.html"><img class="img-fluid w-75 pt-3" src="../media/logo.png" alt="logo"></a>
+            <a class="navbar-brand text-end pt-5 ms-2" href="../index.html"><img class="img-fluid w-75 pt-3" src="../media/logo.jpg" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,43 +52,42 @@
    </header>  
 
     
-    <main class="fondo-contacto">
+    <main class="fondo-triangulos">
 
-        <div class="contacto">
-            <div class="contacto__titulo">
-                <h1>Contacto</h1>
-            </div>
-            <div class="contacto__subtitulo">
-                <h2>Envianos tu mensaje</h2>
-                <p>¡Completa el formulario y veni a bailar!</p>
-            </div>
-        </div> 
+        <section>
+            <h1 class="contacto">Contacto</h1>
+        </section> 
         
-            <form action="#" method="GET">
-    
-                <div class="formulario">
+            <form action="#" method="GET" class="formulario">
+                  <div class="formulario__title">
+                    <h2>Envianos tu mensaje</h2>
+                    <p>¡Completa el formulario y veni a bailar!</p>
+                  </div>  
+                  <div class="formulario__name-usern">
                     <div>
-                        <label for="Name">Nombre</label>
+                        <label for="Name"></label>
                         <input type="text" name="Name" id="Name" placeholder="Introduzca su nombre" required class="formulario__input">
                     </div>
                     <div>
-                        <label for="Surname">Apellido</label>
+                        <label for="Surname"></label>
                         <input type="text" name="Surname" id="Surname" placeholder="Introduzca su apellido"required class="formulario__input">
                     </div>
-                </div>    
+                  </div>
+                   
                 <div class="formulario__mail">
                     <div>
-                        <label for="Email">Email</label>
+                        <label for="Email"></label>
                         <input type="text" name="Email" id="Email" placeholder="Introduzca su email" required class="formulario__input">
                     </div>
                     <div>
-                        <select name="Sedes" id="Sedes" required>
+                        <select name="Sedes" id="Sedes" required class="formulario__mail__elija-sede">
                             <option value="" disabled selected>Elija sede</option>
-                            <option value="Olivos">Olivos</option>
-                            <option value="Palermo">Palermo</option>
+                            <option value="Olivos" class="formulario__mail__elija-sede--color">Olivos</option>
+                            <option value="Palermo" class="formulario__mail__elija-sede--color">Palermo</option>
                         </select>
                     </div>
                  </div>    
+
                     <div class="formulario__textarea">
                         <p>Comentanos tus horarios disponibles o lo que quieras decirnos...</p>
                         <textarea name="mensaje" id="mensaje" cols="55" rows="4" placeholder="Escribe tu mensaje aquí..." class="formulario__textarea__mensaje"></textarea>
@@ -96,36 +95,25 @@
                     </div>
     
                     <div class="formulario__radio">
-                        <div class="formulario__radio--espacio">Instagram</div>
-                        <input type="radio" name="comoNosConociste" value="Instagram" />
-                        <div class="formulario__radio--espacio">Facebook</div>
-                        <input type="radio" name="comoNosConociste" value="Facebook" />
+                        <div class="formulario__radio--espacio">Redes sociales</div>
+                        <input type="radio" name="comoNosConociste" value="Redes sociales" />
                         <div class="formulario__radio--espacio">Publicidad</div>
                         <input type="radio" name="comoNosConociste" value="Publicidad" />
                         <div class="formulario__radio--espacio">Folleto</div>
                         <input type="radio" name="comoNosConociste" value="Folleto" />
                         <div class="formulario__radio--espacio">Por un amigo/a</div>
                         <input type="radio" name="comoNosConociste" value="poramigo-a" />
-                        <div class="formulario__radio--espacio">Twitter</div>
-                        <input type="radio" name="comoNosConociste" value="Twitter" />
                         <div class="formulario__radio--espacio">Otra</div>
                         <input type="radio" name="comoNosConociste" value="Otra" />
                     </div>
-                    <div class="formulario__checkbox">
-                        <div>
-                            <label for="Acepta">Acepta las políticas de privacidad</label>
-                            <input type="checkbox" name="Acepta" id="Acepta">
-                        </div>   
-                        <div class="formulario__checkbox-flex">
-                            <input type="submit" value="Enviar" class="formulario__checkbox--espacio">
-                            <input type="reset" value="Resetear" class="formulario__checkbox--espacio">
-                        </div> 
+                    <div class="formulario__btn">  
+                      <button class="formulario__btn--deco">Enviar</button>
                     </div>
-
             </form>
 
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     </main>
     
     
