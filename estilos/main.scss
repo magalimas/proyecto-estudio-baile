@@ -1,5 +1,5 @@
-@import "./utils/variables";
-@import "./utils/global";
+@import "./base/variables";
+@import "./base/global";
 @import "./pages/index";
 @import "./pages/presenciales";
 @import "./pages/virtuales";
@@ -9,7 +9,7 @@
 @import "./pages/contacto";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./utils/botones";
+@import "./components/botones";
 
 
 

@@ -1,7 +1,7 @@
-@import "../utils/variables";
-@import "../utils/media-queries";
-@import "../utils/mixins";
-@import "../utils/botones";
+@import "../base/variables";
+@import "../base/media-queries";
+@import "../base/mixins";
+@import "../components/botones";
 
 .fondo-ladrillos {
     @include ladrillos ($paddingdefault);
