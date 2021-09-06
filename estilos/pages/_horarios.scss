@@ -22,13 +22,14 @@
 
 .title-horarios{
   @include centrado (center);
+  @include font;
   padding: $paddingdefault + 1;
 }
 
 .horario-subtitle {
   @include flex-c (row, center);
   justify-content: center;
-  margin: $margdefault + 3 $margdefault - 1 $margdefault + 2 $margdefault - 1;
+  margin: $margdefault + 2 $margdefault - 1 $margdefault + 2 $margdefault - 1;
   background-image: url(../../media/fondo-titulo.png);
 }
 

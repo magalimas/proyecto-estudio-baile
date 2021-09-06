@@ -8,8 +8,10 @@
     margin: 0rem $margdefault;
     &__title {
         padding: $paddingdefault + 1;
+        margin-bottom: $margdefault + 1;
+        @include font;
     }
-  }
+}
 
   .contenedor-precios{
     display: flex;
@@ -17,6 +19,7 @@
     margin-top: $margdefault * 2;
     &__texto {
         @include flex-c (column, center);
+        @include centrado (center);
         justify-content: center;
         background-color: $bgblanco;
         box-shadow: 0 3px 17px #333333;
@@ -28,7 +31,7 @@
             border-radius: $borde-circular;
         }
         & span {
-            text-decoration: underline double red;
+            text-decoration: underline double #ff8100;
         }
         &--bold {
             font-weight: bold;
@@ -59,9 +62,12 @@
     }
     @include tablet {
         flex-wrap: wrap;
-        margin: $margdefault + 1;
+        margin: $margdefault + 1 $margdefault + 4 $margdefault + 1 $margdefault + 4;
         padding-right: $paddingdefault - 1;
         padding-left: $paddingdefault - 1;
+    }
+    @include pan-grande {
+        margin: $margdefault;
     }
 }
 

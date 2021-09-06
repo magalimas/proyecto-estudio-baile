@@ -10,6 +10,7 @@
 .contacto {
     @include centrado (center);
     padding-top: $paddingdefault + 1;
+    @include font;
 } 
 
 .formulario {
@@ -19,10 +20,10 @@
         margin: $margdefault + 1;
     }
     @include tablet {
-        margin: $margdefault * 3;
+        margin: $margdefault * 2 $margdefault * 3;
     }
     @include pan-grande {
-        margin: $margdefault + 1 $margdefault + 7;
+
     }
     &__title {
         @include centrado (center);

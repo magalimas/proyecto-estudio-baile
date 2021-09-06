@@ -53,3 +53,34 @@
     left: 7px;
     transition: 0.3s;
 }
+
+@mixin bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@mixin galeria-front {
+    justify-content: space-evenly;
+    box-shadow: 0 3px 17px #333333;
+    background-color: $bgblanco;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    backface-visibility: hidden;
+}
+
+@mixin galeria-back {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    box-shadow: 0 3px 17px #333333;
+    transform: rotateY(180deg);
+    border-radius: $borde-circular + 1;
+    justify-content: space-evenly;
+}
+
+@mixin font {
+    font-family: 'Delius Unicase', cursive; 
+}

@@ -7,6 +7,7 @@
   @include centrado (center);
   &__title {
     padding: $paddingdefault + 1;
+    @include font;
   }
   &__parrafo {
     padding-bottom: $paddingdefault - 1.5;
@@ -58,37 +59,24 @@
   }
   &__adelante {
     @include flex-c (column, center);
-    justify-content: space-evenly;
-    box-shadow: 0 3px 17px #333333;
-    background-color: $bgblanco;
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    backface-visibility: hidden;
+    @include galeria-front;
      &--imagen {
-      height:170px;
+      height: 170px;
       object-fit: cover;
     }
   } 
   &__texto-ritmo {
-    background-image: $gradientorange;
+    background-color: $color-salmon;
     padding: $paddingdefault - 0.8;
     font-size: $fsdefault + 0.1;
     cursor: pointer;
   }
   &__atras {
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    backface-visibility: hidden;
-    background: #b9f;
-    transform: rotateY(180deg);
-    border-radius: $borde-circular + 1;
+    @include galeria-back;
     @include flex-c (column, center);
-    justify-content: space-evenly;
     &--texto {
       box-shadow: $sombra-naranja;
-      padding: 1rem;
+      padding: $paddingdefault - 1;
       font-size: 1.2rem;
       background-color: $bgblanco;
     }

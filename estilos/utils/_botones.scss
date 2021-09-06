@@ -1,3 +1,50 @@
+%after {
+    top: 0px;
+    left: 0px;
+}
+
+
+/*BOTON INICIO*/
+
+.btn-bailar__btn {
+    font-size: $fsdefault + 0.3;
+    @include movil {
+        @include centrado (center);
+        margin-bottom: $margdefault + 2;
+    }
+    &:hover {
+        color: $negro;
+    }
+    &--decor {
+        @include links (none);
+        @include botones ($paddingdefault - 0.8, 0rem);
+    }  
+     &::after {
+        @include boton-after;
+        top: 9px;
+        left: -10px;
+        background-color: $color-salmon;
+        z-index: -1;
+    }
+     &:hover::after {
+        @extend %after;
+    }
+}
+
+.carta__btn {
+    @include links (none);
+    background-color: $color-salmon;
+    padding: $paddingdefault - 1.2;
+    @include movil {
+        padding: $paddingdefault - 1.6;
+    } 
+    &:hover{
+        color: $negro;
+      }
+}
+
+
+
 
 /*BOTON VIRTUALES*/
 
@@ -8,7 +55,7 @@
         @include links (uppercase);
         @include botones ($paddingdefault - 0.5, 0rem);
         &:hover {
-            color: black;
+            color: $negro;
         }
         &::after {
             @include boton-after;
@@ -16,9 +63,8 @@
             z-index: -1;
         }
         &:hover::after {
-            top: 0px;
-            left: 0px;
-           }
+            @extend %after;
+        }
     }
 }
 
@@ -37,8 +83,7 @@
        background-image: repeating-linear-gradient(12deg, #ab77bbc7, #f3c9bc00);
       }
       &:hover::after {
-       top: 0px;
-       left: 0px;
+        @extend %after;
       }
    }
 }  

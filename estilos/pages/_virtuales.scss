@@ -9,6 +9,7 @@
   @include centrado (center);
   &__title {
     padding: $paddingdefault*1.5;
+    @include font;
   }
   &__parr {
     padding-bottom: $paddingdefault - 1.5;
@@ -109,7 +110,7 @@
         }
         @include movil {
             @include cuadro-virtuales;
-            margin: 1rem 2.5rem 8rem 2.5rem;
+            margin: 1rem 2.5rem 2rem 2.5rem;
         }
     }
     @include movil {

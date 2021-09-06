@@ -35,25 +35,27 @@ body {
 .principal__titulo {
   font-size: 1.8rem;
   padding: 1rem;
+  font-family: 'Delius Unicase', cursive;
+  letter-spacing: 0.3rem;
   text-align: center;
 }
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
   .principal__titulo {
     padding: 1.5rem;
-    font-size: 1.5rem;
-  }
-}
-
-.principal span {
-  text-transform: none;
-  letter-spacing: 0.3rem;
-}
-
-@media screen and (min-width: 270px) and (max-width: 732px) {
-  .principal span {
+    font-size: 1.2rem;
     letter-spacing: normal;
   }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+  .principal__titulo {
+    padding-top: 2rem;
+  }
+}
+
+.presentacion {
+  background-color: #d2bbff;
 }
 
 @media screen and (min-width: 950px) and (max-width: 1200px) {
@@ -172,12 +174,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 8rem;
   background-color: #a476ff2b;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
@@ -202,39 +206,6 @@ body {
     padding: 2.5rem;
     text-align: center;
   }
-}
-
-.btn-bailar__btn {
-  font-size: 1.3rem;
-  color: black;
-  -webkit-transition: 1.5s ease;
-  transition: 1.5s ease;
-}
-
-@media screen and (min-width: 270px) and (max-width: 732px) {
-  .btn-bailar__btn {
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-}
-
-.btn-bailar__btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border-radius: 1rem;
-}
-
-.btn-bailar__btn--decor {
-  text-decoration: none;
-  text-transform: none;
-  color: black;
-  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
-  background-image: linear-gradient(to left, orange, #ce650b82);
-  padding: 1.2rem;
-}
-
-.btn-bailar__btn--decor:hover {
-  color: lightyellow;
 }
 
 .carta {
@@ -312,26 +283,6 @@ body {
   }
 }
 
-.carta__link {
-  text-decoration: none;
-  text-transform: none;
-  color: black;
-  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
-  background-image: linear-gradient(to left, orange, #ce650b82);
-  padding: 0.8rem;
-}
-
-@media screen and (min-width: 270px) and (max-width: 732px) {
-  .carta__link {
-    padding: 0.4rem;
-  }
-}
-
-.carta__link:hover {
-  color: lightyellow;
-  border-radius: 1rem;
-}
-
 /*COLORES*/
 /*TAMAÑOS*/
 .titulo-presenciales {
@@ -350,6 +301,7 @@ body {
 
 .titulo-presenciales__title {
   padding: 3rem;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .titulo-presenciales__parrafo {
@@ -458,8 +410,7 @@ body {
 }
 
 .galeria-flex__texto-ritmo {
-  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(#ce650b82));
-  background-image: linear-gradient(to left, orange, #ce650b82);
+  background-color: lightsalmon;
   padding: 1.2rem;
   font-size: 1.1rem;
   cursor: pointer;
@@ -469,12 +420,14 @@ body {
   position: absolute;
   width: 270px;
   height: 270px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  background: #b9f;
+  -webkit-box-shadow: 0 3px 17px #333333;
+          box-shadow: 0 3px 17px #333333;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   border-radius: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,9 +438,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .galeria-flex__atras--texto {
@@ -500,6 +450,72 @@ body {
 
 /*COLORES*/
 /*TAMAÑOS*/
+.btn-bailar__btn:hover::after, .btn-virtuales__link:hover::after, .formulario__btn--deco:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+/*BOTON INICIO*/
+.btn-bailar__btn {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .btn-bailar__btn {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.btn-bailar__btn:hover {
+  color: black;
+}
+
+.btn-bailar__btn--decor {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1.2rem;
+  margin: 0rem;
+  position: relative;
+}
+
+.btn-bailar__btn::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 9px;
+  left: -10px;
+  background-color: lightsalmon;
+  z-index: -1;
+}
+
+.carta__btn {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  background-color: lightsalmon;
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .carta__btn {
+    padding: 0.4rem;
+  }
+}
+
+.carta__btn:hover {
+  color: black;
+}
+
 /*BOTON VIRTUALES*/
 .btn-virtuales {
   text-align: center;
@@ -535,11 +551,6 @@ body {
   z-index: -1;
 }
 
-.btn-virtuales__link:hover::after {
-  top: 0px;
-  left: 0px;
-}
-
 /*BOTON CONTACTO*/
 .formulario__btn {
   text-align: center;
@@ -572,11 +583,6 @@ body {
   background-image: repeating-linear-gradient(12deg, #ab77bbc7, #f3c9bc00);
 }
 
-.formulario__btn--deco:hover::after {
-  top: 0px;
-  left: 0px;
-}
-
 .virtuales {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +599,7 @@ body {
 
 .virtuales__title {
   padding: 3rem;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .virtuales__parr {
@@ -815,7 +822,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem 2.5rem 1rem 2.5rem;
-    margin: 1rem 2.5rem 8rem 2.5rem;
+    margin: 1rem 2.5rem 2rem 2.5rem;
   }
 }
 
@@ -849,6 +856,7 @@ body {
 
 .title-horarios {
   text-align: center;
+  font-family: 'Delius Unicase', cursive;
   padding: 3rem;
 }
 
@@ -866,7 +874,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem 1rem 4rem 1rem;
+  margin: 4rem 1rem 4rem 1rem;
   background-image: url(../../media/fondo-titulo.png);
 }
 
@@ -1500,6 +1508,8 @@ body {
 
 .promo-title__title {
   padding: 3rem;
+  margin-bottom: 3rem;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .contenedor-precios {
@@ -1523,6 +1533,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1542,8 +1553,8 @@ body {
 }
 
 .contenedor-precios__texto span {
-  -webkit-text-decoration: underline double red;
-          text-decoration: underline double red;
+  -webkit-text-decoration: underline double #ff8100;
+          text-decoration: underline double #ff8100;
 }
 
 .contenedor-precios__texto--bold {
@@ -1598,9 +1609,15 @@ body {
   .contenedor-precios {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 3rem;
+    margin: 3rem 6rem 3rem 6rem;
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+  .contenedor-precios {
+    margin: 2rem;
   }
 }
 
@@ -1624,6 +1641,7 @@ body {
 
 .novedades__title {
   padding: 3rem;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .novedades__video {
@@ -1663,7 +1681,6 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 3rem;
-  margin-bottom: 6rem;
 }
 
 @media screen and (min-width: 270px) and (max-width: 732px) {
@@ -1720,8 +1737,80 @@ body {
   }
 }
 
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+  .wave {
+    margin-top: -8rem;
+  }
+}
+
 /*COLORES*/
 /*TAMAÑOS*/
+.btn-bailar__btn:hover::after, .btn-virtuales__link:hover::after, .formulario__btn--deco:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+/*BOTON INICIO*/
+.btn-bailar__btn {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .btn-bailar__btn {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.btn-bailar__btn:hover {
+  color: black;
+}
+
+.btn-bailar__btn--decor {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1.2rem;
+  margin: 0rem;
+  position: relative;
+}
+
+.btn-bailar__btn::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 9px;
+  left: -10px;
+  background-color: lightsalmon;
+  z-index: -1;
+}
+
+.carta__btn {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  background-color: lightsalmon;
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .carta__btn {
+    padding: 0.4rem;
+  }
+}
+
+.carta__btn:hover {
+  color: black;
+}
+
 /*BOTON VIRTUALES*/
 .btn-virtuales {
   text-align: center;
@@ -1757,11 +1846,6 @@ body {
   z-index: -1;
 }
 
-.btn-virtuales__link:hover::after {
-  top: 0px;
-  left: 0px;
-}
-
 /*BOTON CONTACTO*/
 .formulario__btn {
   text-align: center;
@@ -1794,11 +1878,6 @@ body {
   background-image: repeating-linear-gradient(12deg, #ab77bbc7, #f3c9bc00);
 }
 
-.formulario__btn--deco:hover::after {
-  top: 0px;
-  left: 0px;
-}
-
 .fondo-ladrillos {
   background-color: #DFDBE5;
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23cab8e7' fill-opacity='0.34'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -1808,6 +1887,7 @@ body {
 .contacto {
   text-align: center;
   padding-top: 3rem;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .formulario {
@@ -1823,13 +1903,7 @@ body {
 
 @media screen and (min-width: 733px) {
   .formulario {
-    margin: 6rem;
-  }
-}
-
-@media screen and (min-width: 950px) and (max-width: 1200px) {
-  .formulario {
-    margin: 3rem 9rem;
+    margin: 4rem 6rem;
   }
 }
 
@@ -2034,6 +2108,72 @@ body {
   width: 3rem;
 }
 
+.btn-bailar__btn:hover::after, .btn-virtuales__link:hover::after, .formulario__btn--deco:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+/*BOTON INICIO*/
+.btn-bailar__btn {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .btn-bailar__btn {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.btn-bailar__btn:hover {
+  color: black;
+}
+
+.btn-bailar__btn--decor {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1.2rem;
+  margin: 0rem;
+  position: relative;
+}
+
+.btn-bailar__btn::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 9px;
+  left: -10px;
+  background-color: lightsalmon;
+  z-index: -1;
+}
+
+.carta__btn {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  background-color: lightsalmon;
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 732px) {
+  .carta__btn {
+    padding: 0.4rem;
+  }
+}
+
+.carta__btn:hover {
+  color: black;
+}
+
 /*BOTON VIRTUALES*/
 .btn-virtuales {
   text-align: center;
@@ -2069,11 +2209,6 @@ body {
   z-index: -1;
 }
 
-.btn-virtuales__link:hover::after {
-  top: 0px;
-  left: 0px;
-}
-
 /*BOTON CONTACTO*/
 .formulario__btn {
   text-align: center;
@@ -2104,9 +2239,4 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-image: repeating-linear-gradient(12deg, #ab77bbc7, #f3c9bc00);
-}
-
-.formulario__btn--deco:hover::after {
-  top: 0px;
-  left: 0px;
 }

@@ -6,31 +6,32 @@
 .principal {
     &__img {
         background-image: url(../media/img-ppal.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+        @include bg-img;
         @include movil {
             height: auto;
-            padding-bottom: 15rem;
+            padding-bottom: $paddingdefault + 13;
             background-position: center;
         }
     } 
     &__titulo {
         font-size: $fsdefault * 1.8;
         padding: $paddingdefault - 1;
+        @include font;
+        letter-spacing: 0.3rem;
         @include centrado (center);
         @include movil {
             padding: $paddingdefault - 0.5;
-            font-size: $fsdefault * 1.5;
+            font-size: $fsdefault * 1.2;
+            letter-spacing: normal;
         }
-    } & span {
-          text-transform: none;
-          letter-spacing: 0.3rem;
-          @include movil {
-              letter-spacing: normal;
-          }
-    }
+        @include pan-grande {
+            padding-top: $paddingdefault;
+        }
+    } 
+}
+
+.presentacion {
+    background-color: #d2bbff;
 }
 
 .carousel__texto {
@@ -98,10 +99,11 @@
 
 .btn-bailar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: $margdefault * 4;
     background-color: #a476ff2b;
-    padding: $paddingdefault + 1;
+    padding: $paddingdefault;
     @include movil {
         flex-direction: column;
         margin: 0rem;
@@ -114,26 +116,7 @@
             padding: $paddingdefault + 0.5;
             @include centrado (center);
         }
-    } &__btn {
-        font-size: $fsdefault + 0.3;
-        color: black;
-        transition: 1.5s ease;
-        @include movil {
-            @include centrado (center);
-            margin-bottom: $margdefault + 3;
-        }
-        &:hover {
-            transform: scale(1.1);
-            border-radius: $borde-circular;
-        }
-        &--decor {
-            @include links (none);
-            background-image: linear-gradient(to left, orange, #ce650b82);
-            padding: $paddingdefault - 0.8;
-        } &--decor:hover {
-            color: $color-btn-hover;
-        }
-    }
+    } 
 } 
 
 .carta {
@@ -171,15 +154,4 @@
             }
         }
     } 
-      &__link {
-        @include links (none);
-        background-image: $gradientorange;
-        padding: $paddingdefault - 1.2;
-        @include movil {
-            padding: $paddingdefault - 1.6;
-        }
-    } &__link:hover{
-        color: $color-btn-hover;
-        border-radius: $borde-circular;
-    }
 }

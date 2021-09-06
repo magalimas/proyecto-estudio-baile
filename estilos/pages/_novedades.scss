@@ -7,6 +7,7 @@
     justify-content: center;
     &__title{
         padding: $paddingdefault + 1;
+        @include font;
     }
     &__video{
         width: 75%;
@@ -32,7 +33,6 @@
         @include flex-c (row, center);
         justify-content: space-evenly;
         padding-top: $paddingdefault + 1;
-        margin-bottom: $margdefault * 3;
     @include movil {
         @include flex-c (column, center);
         justify-content: center;
@@ -57,3 +57,8 @@
     }
 }
 
+.wave {
+    @include pan-grande {
+        margin-top: -8rem;
+    }
+}
