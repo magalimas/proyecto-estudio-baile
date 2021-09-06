@@ -1,6 +1,6 @@
-@import "../partials/variables";
-@import "../partials/media-queries";
-
+@import "../utils/variables";
+@import "../utils/media-queries";
+@import "../utils/mixins";
 
 
 .principal {
@@ -19,7 +19,7 @@
     &__titulo {
         font-size: $fsdefault * 1.8;
         padding: $paddingdefault - 1;
-        text-align: center;
+        @include centrado (center);
         @include movil {
             padding: $paddingdefault - 0.5;
             font-size: $fsdefault * 1.5;
@@ -50,7 +50,7 @@
 }
 
 .testimonios {
-    text-align: center;
+    @include centrado (center);
     margin-top: $margdefault + 3;
     &__title {
         text-transform: uppercase;
@@ -61,8 +61,7 @@
         display: flex;
         margin: $margdefault;
         @include movil {
-            flex-direction: column;
-            align-items: center;
+            @include flex-c(column, center);
             margin: 0rem;
         }
         @include tablet {
@@ -73,8 +72,7 @@
         width: 75%;
         padding: $paddingdefault - 1;
         margin: $margdefault - 0.5;
-        display: flex;
-        flex-direction: column;
+        @include flex-c(column, stretch);
         justify-content: flex-end;
         border: $bordenegro;
         background-color: $bgblanco;
@@ -87,9 +85,9 @@
     } &__comillas {
         color:  #9f27f5;
         font-size: $fsdefault * 3;
-        text-align: start;
+        @include centrado (start);
         &--derecha {
-            text-align: end;
+            @include centrado (end);
         }
     } 
     &__quote {
@@ -107,20 +105,21 @@
     @include movil {
         flex-direction: column;
         margin: 0rem;
+        padding: 0rem;
     }
     &__texto {
         text-decoration: underline dotted black;
         padding-right: $paddingdefault + 9;
         @include movil {
             padding: $paddingdefault + 0.5;
-            text-align: center;
+            @include centrado (center);
         }
     } &__btn {
         font-size: $fsdefault + 0.3;
         color: black;
         transition: 1.5s ease;
         @include movil {
-            text-align: center;
+            @include centrado (center);
             margin-bottom: $margdefault + 3;
         }
         &:hover {
@@ -128,7 +127,7 @@
             border-radius: $borde-circular;
         }
         &--decor {
-            text-decoration: none;
+            @include links (none);
             background-image: linear-gradient(to left, orange, #ce650b82);
             padding: $paddingdefault - 0.8;
         } &--decor:hover {
@@ -155,9 +154,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     &__flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c(column, center);
         padding-top: $paddingdefault * 3;
         padding-bottom: $paddingdefault * 3;
         transition: 1.5s ease;
@@ -175,8 +172,7 @@
         }
     } 
       &__link {
-        color: black;
-        text-decoration: none;
+        @include links (none);
         background-image: $gradientorange;
         padding: $paddingdefault - 1.2;
         @include movil {

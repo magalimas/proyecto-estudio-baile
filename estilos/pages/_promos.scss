@@ -1,10 +1,10 @@
-@import "../partials/variables";
-@import "../partials/media-queries";
+@import "../utils/variables";
+@import "../utils/media-queries";
+@import "../utils/mixins";
   
 .promo-title{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @include flex-c (column, center)
+    @include centrado (center);
     margin: 0rem $margdefault;
     &__title {
         padding: $paddingdefault + 1;
@@ -16,9 +16,7 @@
     justify-content: space-evenly;
     margin-top: $margdefault * 2;
     &__texto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         justify-content: center;
         background-color: $bgblanco;
         box-shadow: 0 3px 17px #333333;
@@ -43,8 +41,7 @@
         }
     }
     &__textofinal{
-        display: flex;
-        align-items: center;
+        @include flex-c (row, center);
         justify-content: center;
         font-style: italic;
         margin: $margdefault - 1;

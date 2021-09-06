@@ -1,11 +1,12 @@
-@import "../partials/variables";
-@import "../partials/media-queries";
+@import "../utils/variables";
+@import "../utils/media-queries";
+@import "../utils/mixins";
 
 %deco-dias{
   font-size: $fsdefault + 0.1rem;
   text-transform: uppercase;
   font-weight: bolder;
-  text-align: center;
+  @include centrado (center);
   padding: $paddingdefault - 1;
   border: $bordenegro;
   background-color: $color-salmon;
@@ -20,12 +21,12 @@
 }
 
 .title-horarios{
-  text-align: center;
+  @include centrado (center);
   padding: $paddingdefault + 1;
 }
 
 .horario-subtitle {
-  display: flex;
+  @include flex-c (row, center);
   justify-content: center;
   margin: $margdefault + 3 $margdefault - 1 $margdefault + 2 $margdefault - 1;
   background-image: url(../../media/fondo-titulo.png);
@@ -237,7 +238,6 @@
   .ionn {
     grid-area: ionn;
   }
-  
 
   .grid-olivos{
     display: grid;
@@ -439,20 +439,20 @@
   
   .olivosNada{
     grid-area: vacio;
-    text-align: center;
+    @include centrado (center);
     padding: $paddingdefault - 1;
   }
   
   .borde {
     border: $bordenegro;
-    text-align: center;
+    @include centrado (center);
     padding: $paddingdefault - 1;
     font-size: $fsdefault + 0.1rem;
     background-color: $bgblanco;
   }
   
 .iframe {
-  display: flex;
+  @include flex-c (row, center);
   justify-content: space-evenly;
   margin-bottom: $margdefault * 5;
   flex-wrap: wrap;

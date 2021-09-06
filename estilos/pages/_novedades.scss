@@ -1,10 +1,9 @@
-@import "../partials/variables";
-@import "../partials/media-queries";
+@import "../utils/variables";
+@import "../utils/media-queries";
+@import "../utils/mixins";
 
 .novedades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-c (column, center);
     justify-content: center;
     &__title{
         padding: $paddingdefault + 1;
@@ -22,30 +21,25 @@
     }
 }
 
-
 .noved-iframe {
     &__title {
-        text-align: center;
+        @include centrado (center);
         padding: $paddingdefault - 0.8;
         margin: $margdefault * 3 $margdefault 0rem $margdefault;
         background-image: url(../../media/fondo-titulo.png);
     }
     &__iframe{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: $paddingdefault + 1;
-    margin-bottom: $margdefault * 3;
+        @include flex-c (row, center);
+        justify-content: space-evenly;
+        padding-top: $paddingdefault + 1;
+        margin-bottom: $margdefault * 3;
     @include movil {
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         justify-content: center;
         padding: $paddingdefault;
     }
     &--text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         padding: $paddingdefault - 1;
         font-size: $fsdefault + 0.1;
         @include tablet {

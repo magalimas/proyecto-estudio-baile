@@ -1,0 +1,15 @@
+@import "../utils/media-queries";
+
+.nav-fondo{
+    background-image: url(../media/fondo-header.png);
+    @include movil {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:top;
+    }
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    font-size: 0.8rem;
+}

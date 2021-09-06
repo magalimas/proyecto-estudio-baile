@@ -1,11 +1,10 @@
-@import "../partials/variables";
-@import "../partials/media-queries";
+@import "../utils/variables";
+@import "../utils/media-queries";
+@import "../utils/mixins";
 
 .titulo-presenciales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  @include flex-c (column, center);
+  @include centrado (center);
   &__title {
     padding: $paddingdefault + 1;
   }
@@ -18,7 +17,7 @@
       padding: $paddingdefault - 1.6;
       font-size: $fsdefault - 0.2;
       margin: 0rem 1.2rem;
-      text-align: center;
+      @include centrado (center);
     }
   }
 }
@@ -36,7 +35,7 @@
     border-bottom: $bordegris;
     @include movil {
       font-size: $fsdefault + 0.2;
-      text-align: center;
+      @include centrado (center);
       margin: 4rem 1rem 2rem 2rem;
     }
   }
@@ -58,9 +57,7 @@
     }
   }
   &__adelante {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-c (column, center);
     justify-content: space-evenly;
     box-shadow: 0 3px 17px #333333;
     background-color: $bgblanco;
@@ -87,9 +84,7 @@
     background: #b9f;
     transform: rotateY(180deg);
     border-radius: $borde-circular + 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-c (column, center);
     justify-content: space-evenly;
     &--texto {
       box-shadow: $sombra-naranja;

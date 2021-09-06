@@ -1,43 +1,18 @@
-@import "./partials/variables";
-@import "./views/index";
-@import "./views/presenciales";
-@import "./views/virtuales";
-@import "./views/horarios";
-@import "./views/promos";
-@import "./views/novedades";
-@import "./views/contacto";
+@import "./utils/variables";
+@import "./utils/global";
+@import "./pages/index";
+@import "./pages/presenciales";
+@import "./pages/virtuales";
+@import "./pages/horarios";
+@import "./pages/promos";
+@import "./pages/novedades";
+@import "./pages/contacto";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./utils/botones";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
- background-color: $color-ppal;
-}
 
-.nav-fondo{
-    background-image: url(../media/fondo-header.png);
-    @include movil {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position:top;
-    }
-}
-
-.navbar-nav .dropdown-menu {
-    position: absolute;
-    font-size: 0.8rem;
-}
-
-.img-footer {
-    background-image: url(../media/fondo-footer.png);
-}
-
-.fb, .ig, .yt{
-    width: 3rem;
-}
 
 
 

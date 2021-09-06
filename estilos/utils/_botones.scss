@@ -1,0 +1,44 @@
+
+/*BOTON VIRTUALES*/
+
+.btn-virtuales{
+    @include centrado (center);
+    margin: 4rem 0rem 7rem 0rem;
+    &__link{
+        @include links (uppercase);
+        @include botones ($paddingdefault - 0.5, 0rem);
+        &:hover {
+            color: black;
+        }
+        &::after {
+            @include boton-after;
+            background-color: $color-salmon;
+            z-index: -1;
+        }
+        &:hover::after {
+            top: 0px;
+            left: 0px;
+           }
+    }
+}
+
+
+/*BOTON CONTACTO*/
+
+.formulario__btn {
+    @include centrado (center);
+    &--deco {
+      @include botones ($paddingdefault - 1 $paddingdefault, $margdefault + 0.5);
+      @include movil {
+       margin: $margdefault - 0.5;
+      }
+      &::after {
+       @include boton-after;
+       background-image: repeating-linear-gradient(12deg, #ab77bbc7, #f3c9bc00);
+      }
+      &:hover::after {
+       top: 0px;
+       left: 0px;
+      }
+   }
+}  

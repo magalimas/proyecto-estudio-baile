@@ -1,12 +1,12 @@
-@import "../partials/variables";
-@import "../partials/media-queries";
+@import "../utils/variables";
+@import "../utils/media-queries";
+@import "../utils/mixins";
+@import "../utils/botones";
 
 
 .virtuales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  @include flex-c (column, center);
+  @include centrado (center);
   &__title {
     padding: $paddingdefault*1.5;
   }
@@ -20,7 +20,7 @@
     padding: $paddingdefault - 1.6;
     font-size: $fsdefault - 0.2;
     margin: 0rem 1.2rem;
-    text-align: center;
+    @include centrado (center);
   }
 }
 
@@ -28,13 +28,10 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     &__izq {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         padding: $paddingdefault - 1;
         margin: 5rem 4rem 6rem 7rem;
-        border-left: 10px solid lightslategrey;
-        border-top: 10px solid lightsalmon;
+        @include bordes-dos-colores (10px solid lightslategrey, none, 10px solid lightsalmon, none);
         &--title{
             font-size: $fsdefault*1.5;
             @include movil {
@@ -46,22 +43,15 @@
             padding-top: $paddingdefault/2;
         }
         @include movil {
-            padding: 1rem 2.5rem 1rem 2.5rem;
+            @include cuadro-virtuales;
             margin: 5rem 2.5rem 1rem 2.5rem;
-            border: none;
-            box-shadow: $sombra-naranja;
-            width: auto;
-            align-items: center;
         }
     }
     &__dere {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         padding: $paddingdefault - 1;
         margin: 5rem 7rem 6rem 3rem;
-        border-right: 10px solid lightslategrey;
-        border-top: 10px solid lightsalmon;
+        @include bordes-dos-colores (none, 10px solid lightslategrey, 10px solid lightsalmon, none);
         &--title{
             font-size: $fsdefault*1.5;
             @include movil {
@@ -77,22 +67,15 @@
         }
       }
       @include movil {
-        padding: 1rem 2.5rem 1rem 2.5rem;
+        @include cuadro-virtuales;
         margin: 1rem 2.5rem 1rem 2.5rem;
-        border: none;
-        box-shadow: $sombra-naranja;
-        width: auto;
-        align-items: center;
       }
     }
       &__izq-dos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         padding: $paddingdefault - 1;
         margin: 3rem 4rem 7rem 7rem;
-        border-left: 10px solid lightslategrey;
-        border-bottom: 10px solid lightsalmon;
+        @include bordes-dos-colores(10px solid lightslategrey, none, none, 10px solid lightsalmon);
         &--title{
             font-size: $fsdefault*1.5;
             @include movil {
@@ -104,23 +87,16 @@
             padding-top: $paddingdefault/2;
         }
         @include movil {
-            padding: 1rem 2.5rem 1rem 2.5rem;
+            @include cuadro-virtuales;
             margin: 1rem 2.5rem 1rem 2.5rem;
-            border: none;
-            box-shadow: $sombra-naranja;
-            width: auto;
-            align-items: center;
         }
     }
     &__dere-dos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-c (column, center);
         justify-content: space-evenly;
         padding: $paddingdefault - 1;
         margin: 3rem 7rem 7rem 3rem;
-        border-right: 10px solid lightslategrey;
-        border-bottom: 10px solid lightsalmon;
+        @include bordes-dos-colores(none, 10px solid lightslategrey, none, 10px solid lightsalmon);
         &--title{
             font-size: $fsdefault*1.5;
             @include movil {
@@ -132,12 +108,8 @@
             padding-top: $paddingdefault/2;
         }
         @include movil {
-            padding: 1rem 2.5rem 1rem 2.5rem;
+            @include cuadro-virtuales;
             margin: 1rem 2.5rem 8rem 2.5rem;
-            border: none;
-            box-shadow: $sombra-naranja;
-            width: auto;
-            align-items: center;
         }
     }
     @include movil {
@@ -145,22 +117,3 @@
     }
 }
 
-
-.btn-virtuales{
-    text-align: center;
-    margin: 4rem 0rem 7rem 0rem;
-    &__link{
-        text-transform: uppercase;
-        text-decoration: none;
-        color: black;
-        background-image: $gradientorange;
-        padding: $paddingdefault - 0.5;
-        font-size: $fsdefault + 0.5;
-        border-radius: $borde-circular;
-        transition: 1.5s ease;
-        &:hover {
-            transform: scale(2.5);
-            color: $color-btn-hover;
-        }
-    }
-}
