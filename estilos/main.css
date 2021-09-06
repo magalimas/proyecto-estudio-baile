@@ -875,7 +875,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 4rem 1rem 4rem 1rem;
-  background-image: url(../../media/fondo-titulo.png);
+  background-image: url(.././media/fondo-titulo.png);
 }
 
 .letra-color {
@@ -1585,7 +1585,7 @@ body {
           justify-content: center;
   font-style: italic;
   margin: 1rem;
-  background-image: url(../../media/fondo-titulo.png);
+  background-image: url(.././media/fondo-titulo.png);
 }
 
 .contenedor-precios__textofinal::before {
@@ -1663,7 +1663,7 @@ body {
   text-align: center;
   padding: 1.2rem;
   margin: 6rem 2rem 0rem 2rem;
-  background-image: url(../../media/fondo-titulo.png);
+  background-image: url(.././media/fondo-titulo.png);
 }
 
 .noved-iframe__iframe {

@@ -27,7 +27,7 @@
         @include centrado (center);
         padding: $paddingdefault - 0.8;
         margin: $margdefault * 3 $margdefault 0rem $margdefault;
-        background-image: url(../../media/fondo-titulo.png);
+        background-image: url(.././media/fondo-titulo.png);
     }
     &__iframe{
         @include flex-c (row, center);
